@@ -65,7 +65,7 @@ const Socials = () => (
       >
         <FaInstagram />
       </SocialButton>
-      <SocialButton label={"Twitter"} href={"#"}>
+      <SocialButton label={"Twitter/X"} href={"#"}>
         <FaXTwitter />
       </SocialButton>
       <SocialButton label={"Tiktok"} href={"#"}>
