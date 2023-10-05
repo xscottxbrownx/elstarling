@@ -42,13 +42,12 @@ const Works = () => {
       as="section"
       id="works"
       w="100vw"
-      bg="#504607"
       my="4rem"
       align="center"
       justify="center"
       direction="column"
     >
-      <Heading mt="2rem" color="#edfbf8">
+      <Heading mt="2rem" color="#504607">
         Current Works
       </Heading>
       <Stack
@@ -61,7 +60,14 @@ const Works = () => {
         py={{ base: "3rem", lg: "5rem" }}
       >
         {worksData.map((work) => (
-          <Card key={work.id} align="center" minW="300px" bg="#edfbf8">
+          <Card
+            key={work.id}
+            align="center"
+            minW="300px"
+            bg="whiteAlpha.900"
+            color="#504607"
+            shadow="dark-lg"
+          >
             <CardBody align="center">
               <Image
                 src={work.img}
@@ -71,7 +77,11 @@ const Works = () => {
                 borderRadius="lg"
               />
               <Stack mt={2} spacing={3}>
-                <Heading size="md">{work.title}</Heading>
+                <Heading size="md" mb={3}>
+                  {work.title}
+                </Heading>
+                <Text>{work.description}</Text>
+                <Text>{work.description}</Text>
                 <Text>{work.description}</Text>
               </Stack>
             </CardBody>
