@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
+import Contact2 from "./components/Contact2";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -17,7 +18,8 @@ const App = () => (
       <About />
       <Works />
       <Posts />
-      <Contact />
+      {/* <Contact /> */}
+      <Contact2 />
     </main>
     <Footer />
   </>

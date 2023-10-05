@@ -13,7 +13,7 @@ import {
   Textarea,
   Tooltip,
   useClipboard,
-  useColorModeValue,
+  // useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 // import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
@@ -30,11 +30,13 @@ const Contact = () => {
     <Flex
       id="contact"
       // bg={useColorModeValue("gray.100", "gray.900")}
-      bg="#504607"
+      // bg="#504607"
+      bg="#edfbf8"
       align="center"
       justify="center"
       mt="2rem"
-      color="#edfbf8"
+      // color="#edfbf8"
+      color="#504607"
       // css={{
       //   backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
       //   backgroundAttachment: "fixed",
@@ -46,7 +48,7 @@ const Contact = () => {
         p={{ base: 5, lg: 16 }}
       >
         <Box>
-          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+          <VStack spacing={{ base: 8, md: 12 }}>
             <Heading
               fontSize={{
                 base: "4xl",
@@ -57,13 +59,15 @@ const Contact = () => {
             </Heading>
 
             <Stack
-              spacing={{ base: 4, md: 8, lg: 20 }}
-              direction={{ base: "column", md: "row" }}
+              spacing={4}
+              // direction={{ base: "column", md: "row" }}
+              direction="column"
             >
               <Stack
                 align="center"
                 justify="space-around"
-                direction={{ base: "row", md: "column" }}
+                // direction={{ base: "row", md: "column" }}
+                direction="row"
               >
                 <Tooltip
                   label={hasCopied ? "Email Copied!" : "Copy Email"}
@@ -76,10 +80,11 @@ const Contact = () => {
                     size="lg"
                     fontSize="3xl"
                     icon={<MdEmail />}
-                    color="#edfbf8"
+                    color="#70620a"
+                    bg="#edfbf8"
                     _hover={{
-                      bg: "blue.500",
-                      color: useColorModeValue("white", "gray.700"),
+                      bg: "#70620a",
+                      color: "white",
                     }}
                     onClick={onCopy}
                     isRound
@@ -94,10 +99,11 @@ const Contact = () => {
                       size="lg"
                       fontSize="3xl"
                       icon={<FaInstagram />}
-                      color="#edfbf8"
+                      color="#70620a"
+                      bg="#edfbf8"
                       _hover={{
-                        bg: "blue.500",
-                        color: useColorModeValue("white", "gray.700"),
+                        bg: "#70620a",
+                        color: "white",
                       }}
                       isRound
                     />
@@ -111,12 +117,14 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       icon={<FaXTwitter size="28px" />}
-                      color="#edfbf8"
+                      color="#70620a"
+                      bg="#edfbf8"
                       _hover={{
                         // bg: "blue.500",
-                        bg: "#edfbf8",
+                        bg: "#70620a",
+                        color: "white",
                         // color: useColorModeValue("white", "gray.700"),
-                        color: "#70620a",
+                        // color: "#70620a",
                       }}
                       isRound
                     />
@@ -130,12 +138,15 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       icon={<FaTiktok size="28px" />}
-                      color="#edfbf8"
+                      // color="#edfbf8"
+                      color="#70620a"
+                      bg="#edfbf8"
                       _hover={{
                         // bg: "blue.500",
-                        bg: "#edfbf8",
+                        // bg: "#70620a",
+                        bg: "#70620a",
                         // color: useColorModeValue("white", "gray.700"),
-                        color: "#70620a",
+                        color: "white",
                       }}
                       isRound
                     />
@@ -149,12 +160,13 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       icon={<SiSubstack size="28px" />}
-                      color="#edfbf8"
+                      color="#70620a"
+                      bg="#edfbf8"
                       _hover={{
                         // bg: "blue.500",
-                        bg: "#edfbf8",
+                        bg: "#70620a",
                         // color: useColorModeValue("white", "gray.700"),
-                        color: "#70620a",
+                        color: "white",
                       }}
                       isRound
                     />
@@ -164,11 +176,13 @@ const Contact = () => {
 
               <Box
                 // bg={useColorModeValue("white", "gray.700")}
-                bg="#edfbf8"
+                // bg="#edfbf8"
+                bg="whiteAlpha.900"
                 borderRadius="lg"
                 p={8}
-                color={useColorModeValue("gray.900", "whiteAlpha.900")}
-                shadow="base"
+                // color={useColorModeValue("gray.900", "whiteAlpha.900")}
+                color="#504607"
+                boxShadow="dark-lg"
               >
                 <VStack spacing={5}>
                   <FormControl isRequired>
