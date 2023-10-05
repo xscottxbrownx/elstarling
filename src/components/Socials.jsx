@@ -6,74 +6,34 @@ import SocialButton from "./SocialButton";
 
 const Socials = () => (
   <Flex
-    justify={{ base: "flex-end", lg: "center" }}
+    justify="center"
     align="center"
     mb="2rem"
     h={{ base: "3rem", lg: "5rem" }}
-    bg="transparent"
-    // bg="#edfbf8"
-    backdropFilter="blur(100px) invert(.15)"
-    pos="sticky"
-    top="0"
-    zIndex="200"
     borderBottom="solid 1px #504607"
   >
     <Stack
       direction="row"
       spacing={{ base: 4, lg: 8 }}
-      mr={{ base: "2rem", lg: "null" }}
+      mr={{ base: "2rem", lg: "0" }}
     >
-      {/* <Button
-        leftIcon={<FaInstagram />}
-        colorScheme="gray"
-        variant="ghost"
-        size="lg"
-        borderRadius="full"
-      >
-        Instagram
-      </Button>
-      <Button
-        leftIcon={<FaXTwitter />}
-        colorScheme="gray"
-        variant="ghost"
-        size="lg"
-        borderRadius="3xl"
-      >
-        Twitter
-      </Button>
-      <Button
-        leftIcon={<FaTiktok />}
-        colorScheme="gray"
-        variant="ghost"
-        size="lg"
-        borderRadius="full"
-      >
-        Tiktok
-      </Button>
-      <Button
-        leftIcon={<SiSubstack />}
-        colorScheme="gray"
-        variant="ghost"
-        size="lg"
-        borderRadius="full"
-      >
-        Substack
-      </Button> */}
       <SocialButton
         label={"Instagram"}
         href={"https://www.instagram.com/e_l_starling/"}
+        size={{ base: 8, lg: 12 }}
       >
         <FaInstagram />
       </SocialButton>
-      <SocialButton label={"Twitter/X"} href={"#"}>
+      <SocialButton label={"Twitter/X"} href={"#"} size={{ base: 8, lg: 12 }}>
         <FaXTwitter />
       </SocialButton>
-      <SocialButton label={"Tiktok"} href={"#"}>
+      <SocialButton label={"Tiktok"} href={"#"} size={{ base: 8, lg: 12 }}>
         <FaTiktok />
       </SocialButton>
       <SocialButton
         label={"Substack"}
         href={"https://elstarling.substack.com/"}
+        size={{ base: 8, lg: 12 }}
       >
         <SiSubstack />
       </SocialButton>
