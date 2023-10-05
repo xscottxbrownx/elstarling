@@ -12,11 +12,7 @@ const Socials = () => (
     h={{ base: "3rem", lg: "5rem" }}
     borderBottom="solid 1px #504607"
   >
-    <Stack
-      direction="row"
-      spacing={{ base: 4, lg: 8 }}
-      mr={{ base: "2rem", lg: "0" }}
-    >
+    <Stack direction="row" spacing={{ base: 4, lg: 8 }}>
       <SocialButton
         label={"Instagram"}
         href={"https://www.instagram.com/e_l_starling/"}
