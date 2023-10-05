@@ -29,18 +29,20 @@ const About = () => (
         maxW={{ base: "400px", md: "300px", lg: "400px" }}
         mt={{ base: "2rem", md: "0" }}
       >
-        <Text color="#edfbf8">
-          <Text as="b">EMILY “E.L.” STARLING</Text> grew up in the center of
-          California, midway between all the cities anyone has ever heard of.
-          During her career as a papercut artist, she&apos;s shown her work in
-          galleries from California to New Hampshire and been featured in print,
-          ad campaigns, an artist spotlight series, and a stop-motion short.
-          Today she lives in Portland, Oregon where she runs her company, Bird
-          Mafia, and spends her days papercutting, running slowly, hiking,
-          befriending neighborhood cats, and doing the wholly unfun parts of
-          running a small business. In her pre-dawn hours, she can be found
-          writing{" "}
-          <Text as="b">
+        <Text color="#edfbf8" sx={{ lineHeight: "2" }}>
+          <Text as="b" sx={{ fontWeight: "extrabold" }}>
+            EMILY “E.L.” STARLING
+          </Text>{" "}
+          grew up in the center of California, midway between all the cities
+          anyone has ever heard of. During her career as a papercut artist,
+          she&apos;s shown her work in galleries from California to New
+          Hampshire and been featured in print, ad campaigns, an artist
+          spotlight series, and a stop-motion short. Today she lives in
+          Portland, Oregon where she runs her company, Bird Mafia, and spends
+          her days papercutting, running slowly, hiking, befriending
+          neighborhood cats, and doing the wholly unfun parts of running a small
+          business. In her pre-dawn hours, she can be found writing{" "}
+          <Text as="b" sx={{ fontWeight: "extrabold" }}>
             YA speculative fiction novels full of longing and twisty secrets
           </Text>{" "}
           with a cup of coffee at the ready and the ever-present hope of
