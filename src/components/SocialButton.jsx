@@ -30,5 +30,5 @@ SocialButton.propTypes = {
   children: PropTypes.element.isRequired,
   label: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
+  size: PropTypes.object.isRequired,
 };
