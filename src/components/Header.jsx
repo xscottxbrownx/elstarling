@@ -29,7 +29,7 @@ const Header = () => (
           <Box
             as="a"
             key={link}
-            href={`#${link}`}
+            href={link === "Home" ? "#" : `#${link}`}
             _hover={{ textDecoration: "underline" }}
           >
             {link}

@@ -1,7 +1,7 @@
 const Posts = () => (
   <div style={{ width: "100vw", display: "flex", justifyContent: "center" }}>
     <div
-      id="posts"
+      id="Posts"
       style={{
         width: "90vw",
         // minHeight: "25rem",

@@ -45,7 +45,7 @@ export default function Footer() {
             <Box
               as="a"
               key={link}
-              href={`#${link}`}
+              href={link === "Home" ? "#" : `#${link}`}
               transition="0.3s"
               _hover={{ color: "#504607", transform: "translateY(-5px)" }}
             >

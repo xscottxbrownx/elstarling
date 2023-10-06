@@ -19,6 +19,7 @@ import substack from "../assets/substack_logo.webp";
 const Contact2 = () => {
   return (
     <Flex
+      id="Contact"
       direction={{ base: "column", lg: "row" }}
       color="#504607"
       mt="2rem"

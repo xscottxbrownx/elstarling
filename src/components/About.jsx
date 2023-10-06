@@ -2,7 +2,7 @@ import aboutImage from "../assets/authorPortrait.webp";
 import { Box, Container, Flex, Image, Text } from "@chakra-ui/react";
 
 const About = () => (
-  <Container as="section" id="about" w="100vw" centerContent>
+  <Container as="section" id="About" w="100vw" centerContent>
     <Flex
       direction={{ base: "column", md: "row" }}
       bg="#70620a"

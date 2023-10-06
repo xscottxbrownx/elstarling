@@ -40,7 +40,7 @@ const Works = () => {
   return (
     <Flex
       as="section"
-      id="works"
+      id="Works"
       w="100vw"
       my="4rem"
       align="center"

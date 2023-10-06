@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <Flex
-      id="contact"
+      id="Contact"
       // bg={useColorModeValue("gray.100", "gray.900")}
       // bg="#504607"
       bg="#edfbf8"
