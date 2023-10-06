@@ -25,6 +25,7 @@ export default function Footer() {
       // bg="white"
       bg="whiteAlpha.900"
       borderTop="solid 1px #504607"
+      mt="8rem"
     >
       <Container
         as={Stack}

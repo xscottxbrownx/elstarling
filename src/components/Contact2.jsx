@@ -22,8 +22,7 @@ const Contact2 = () => {
       id="Contact"
       direction={{ base: "column", lg: "row" }}
       color="#504607"
-      mt="2rem"
-      mb="4rem"
+      mt="4rem"
       align={{ base: "center", lg: "flex-start" }}
       justify="space-evenly"
       gap={24}
