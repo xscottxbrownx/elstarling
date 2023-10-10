@@ -24,7 +24,11 @@ const Header = () => (
         mt={{ base: "3px", lg: "null" }}
       />
       <Spacer />
-      <HStack spacing={{ base: 3, lg: 6 }} mr={{ base: "1rem", lg: "2rem" }}>
+      <HStack
+        as="nav"
+        spacing={{ base: 3, lg: 6 }}
+        mr={{ base: "1rem", lg: "2rem" }}
+      >
         {LINKS.map((link) => (
           <Box
             as="a"
