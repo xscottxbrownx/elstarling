@@ -75,9 +75,9 @@ export default function Footer() {
               label={"Instagram"}
               href={"https://www.instagram.com/e_l_starling/"}
               size={{ base: 8 }}
-              _hover={{
-                color: "#504607",
-              }}
+              // _hover={{
+              //   color: "#504607",
+              // }}
             >
               <FaInstagram />
             </SocialButton>

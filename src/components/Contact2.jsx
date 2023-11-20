@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Heading,
   HStack,
@@ -36,23 +35,20 @@ const Contact2 = () => {
         >
           Get In Touch
         </Heading>
-        <HStack
-          align="center"
-          justify="space-around"
-          // direction={{ base: "row", md: "column" }}
-          direction="row"
-        >
+        <HStack align="center" justify="space-around" direction="row">
           <Tooltip label="Send Email" closeOnClick={false} hasArrow>
             <IconButton
+              as="a"
+              href="mailto:emilylstarling@gmail.com"
               aria-label="email"
               variant="ghost"
               size="lg"
               fontSize="3xl"
               icon={<MdEmail />}
-              color="#70620a"
+              color="#ff681a"
               bg="#edfbf8"
               _hover={{
-                bg: "#70620a",
+                bg: "#ff681a",
                 color: "white",
               }}
               // onClick={onCopy}
@@ -61,76 +57,84 @@ const Contact2 = () => {
           </Tooltip>
 
           <Tooltip label="Instagram" closeOnClick={false} hasArrow>
-            <Box as="a" href="https://www.instagram.com/e_l_starling/">
-              <IconButton
-                aria-label="instagram"
-                variant="ghost"
-                size="lg"
-                fontSize="3xl"
-                icon={<FaInstagram />}
-                color="#70620a"
-                bg="#edfbf8"
-                _hover={{
-                  bg: "#70620a",
-                  color: "white",
-                }}
-                isRound
-              />
-            </Box>
+            <IconButton
+              as="a"
+              href="https://www.instagram.com/e_l_starling/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="instagram"
+              variant="ghost"
+              size="lg"
+              fontSize="3xl"
+              icon={<FaInstagram />}
+              color="#ff681a"
+              bg="#edfbf8"
+              _hover={{
+                bg: "#ff681a",
+                color: "white",
+              }}
+              isRound
+            />
           </Tooltip>
 
           <Tooltip label="Twitter / X" closeOnClick={false} hasArrow>
-            <Box as="a" href="#">
-              <IconButton
-                aria-label="twitter/x"
-                variant="ghost"
-                size="lg"
-                icon={<FaXTwitter size="28px" />}
-                color="#70620a"
-                bg="#edfbf8"
-                _hover={{
-                  bg: "#70620a",
-                  color: "white",
-                }}
-                isRound
-              />
-            </Box>
+            <IconButton
+              as="a"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="twitter/x"
+              variant="ghost"
+              size="lg"
+              icon={<FaXTwitter size="28px" />}
+              color="#70620a"
+              bg="#edfbf8"
+              _hover={{
+                bg: "#70620a",
+                color: "white",
+              }}
+              isRound
+            />
           </Tooltip>
 
           <Tooltip label="Tiktok" closeOnClick={false} hasArrow>
-            <Box as="a" href="#">
-              <IconButton
-                aria-label="tiktok"
-                variant="ghost"
-                size="lg"
-                icon={<FaTiktok size="28px" />}
-                color="#70620a"
-                bg="#edfbf8"
-                _hover={{
-                  bg: "#70620a",
-                  color: "white",
-                }}
-                isRound
-              />
-            </Box>
+            <IconButton
+              as="a"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="tiktok"
+              variant="ghost"
+              size="lg"
+              icon={<FaTiktok size="28px" />}
+              color="#70620a"
+              bg="#edfbf8"
+              _hover={{
+                bg: "#70620a",
+                color: "white",
+              }}
+              isRound
+            />
           </Tooltip>
 
           <Tooltip label="Substack" closeOnClick={false} hasArrow>
-            <Box as="a" href="https://elstarling.substack.com/">
-              <IconButton
-                aria-label="substack"
-                variant="ghost"
-                size="lg"
-                icon={<SiSubstack size="28px" />}
-                color="#70620a"
-                bg="#edfbf8"
-                _hover={{
-                  bg: "#70620a",
-                  color: "white",
-                }}
-                isRound
-              />
-            </Box>
+            <IconButton
+              as="a"
+              href="https://elstarling.substack.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="substack"
+              variant="ghost"
+              size="lg"
+              icon={<SiSubstack size="28px" />}
+              color="#70620a"
+              bg="#edfbf8"
+              _hover={{
+                bg: "#70620a",
+                color: "white",
+              }}
+              isRound
+            />
           </Tooltip>
         </HStack>
         <HStack>

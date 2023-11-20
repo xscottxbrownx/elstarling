@@ -16,6 +16,7 @@ export default function SocialButton({ children, label, href, size }) {
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       target="_blank"
+      // color="#ff681a"
       _hover={{
         bg: useColorModeValue("blackAlpha.300", "whiteAlpha.300"),
       }}
