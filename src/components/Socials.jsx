@@ -4,13 +4,15 @@ import { FaXTwitter } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
 // import SocialButton from "./SocialButton";
 
+// ***** make all orange *****
+
 const Socials = () => (
   <Flex
     justify="center"
     align="center"
-    mb="2rem"
-    h={{ base: "3rem", lg: "5rem" }}
-    borderBottom="solid 1px #504607"
+    // mb="2rem"
+    h={{ base: "5rem" }}
+    // borderBottom="solid 1px var(--darkgold)"
   >
     <Stack direction="row" spacing={{ base: 4, lg: 8 }}>
       {/* <SocialButton
@@ -48,10 +50,10 @@ const Socials = () => (
           size="lg"
           fontSize="3xl"
           icon={<FaInstagram />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -67,10 +69,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaXTwitter size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -86,10 +88,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaTiktok size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="(var(--blue))"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -106,10 +108,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<SiSubstack size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -127,10 +129,10 @@ const Socials = () => (
           size="lg"
           fontSize="3xl"
           icon={<FaInstagram />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -142,10 +144,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaXTwitter size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -157,10 +159,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaTiktok size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -172,10 +174,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<SiSubstack size="28px" />}
-          color="#ff681a"
-          bg="#edfbf8"
+          color="var(--orange)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#ff681a",
+            bg: "var(--orange)",
             color: "white",
           }}
           isRound
@@ -192,10 +194,10 @@ const Socials = () => (
           size="lg"
           fontSize="3xl"
           icon={<FaInstagram />}
-          color="#70620a"
-          bg="#edfbf8"
+          color="var(--gold)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#70620a",
+            bg: "var(--gold)",
             color: "white",
           }}
           isRound
@@ -207,10 +209,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaXTwitter size="28px" />}
-          color="#70620a"
-          bg="#edfbf8"
+          color="var(--gold)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#70620a",
+            bg: "var(--gold)",
             color: "white",
           }}
           isRound
@@ -222,10 +224,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<FaTiktok size="28px" />}
-          color="#70620a"
-          bg="#edfbf8"
+          color="var(--gold)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#70620a",
+            bg: "var(--gold)",
             color: "white",
           }}
           isRound
@@ -237,10 +239,10 @@ const Socials = () => (
           variant="ghost"
           size="lg"
           icon={<SiSubstack size="28px" />}
-          color="#70620a"
-          bg="#edfbf8"
+          color="var(--gold)"
+          bg="var(--blue)"
           _hover={{
-            bg: "#70620a",
+            bg: "var(--gold)",
             color: "white",
           }}
           isRound

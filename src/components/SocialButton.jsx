@@ -5,16 +5,16 @@ export default function SocialButton({ children, label, href, size }) {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-      rounded={"full"}
+      rounded="full"
       w={size}
       h={size}
-      cursor={"pointer"}
-      as={"a"}
+      cursor="pointer"
+      as="a"
       href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
+      display="inline-flex"
+      alignItems="center"
+      justifyContent="center"
+      transition="background 0.3s ease"
       target="_blank"
       // color="#ff681a"
       _hover={{

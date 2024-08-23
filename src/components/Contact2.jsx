@@ -3,7 +3,6 @@ import {
   Heading,
   HStack,
   IconButton,
-  Image,
   Link,
   Text,
   Tooltip,
@@ -13,14 +12,14 @@ import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
-import substack from "../assets/substack_logo.webp";
+// import substack from "../assets/substack_logo.webp";
 
 const Contact2 = () => {
   return (
     <Flex
       id="Contact"
       direction={{ base: "column", lg: "row" }}
-      color="#504607"
+      color="var(--darkgold)"
       mt="4rem"
       align={{ base: "center", lg: "flex-start" }}
       justify="space-evenly"
@@ -45,10 +44,10 @@ const Contact2 = () => {
               size="lg"
               fontSize="3xl"
               icon={<MdEmail />}
-              color="#ff681a"
-              bg="#edfbf8"
+              color="var(--orange)"
+              bg="var(--blue)"
               _hover={{
-                bg: "#ff681a",
+                bg: "var(--orange)",
                 color: "white",
               }}
               // onClick={onCopy}
@@ -67,10 +66,10 @@ const Contact2 = () => {
               size="lg"
               fontSize="3xl"
               icon={<FaInstagram />}
-              color="#ff681a"
-              bg="#edfbf8"
+              color="var(--orange)"
+              bg="var(--blue)"
               _hover={{
-                bg: "#ff681a",
+                bg: "var(--orange)",
                 color: "white",
               }}
               isRound
@@ -87,10 +86,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<FaXTwitter size="28px" />}
-              color="#70620a"
-              bg="#edfbf8"
+              color="var(--orange)"
+              bg="var(--blue)"
               _hover={{
-                bg: "#70620a",
+                bg: "var(--orange)",
                 color: "white",
               }}
               isRound
@@ -107,10 +106,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<FaTiktok size="28px" />}
-              color="#70620a"
-              bg="#edfbf8"
+              color="var(--orange)"
+              bg="var(--blue)"
               _hover={{
-                bg: "#70620a",
+                bg: "var(--orange)",
                 color: "white",
               }}
               isRound
@@ -127,10 +126,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<SiSubstack size="28px" />}
-              color="#70620a"
-              bg="#edfbf8"
+              color="var(--orange)"
+              bg="var(--blue)"
               _hover={{
-                bg: "#70620a",
+                bg: "var(--orange)",
                 color: "white",
               }}
               isRound
@@ -149,7 +148,7 @@ const Contact2 = () => {
         </HStack>
       </VStack>
 
-      <VStack spacing={4} mr={{ base: "0", lg: "2rem" }}>
+      {/* <VStack spacing={4} mr={{ base: "0", lg: "2rem" }}>
         <Heading
           fontSize={{
             base: "4xl",
@@ -171,7 +170,7 @@ const Contact2 = () => {
             <Image src={substack} alt="substack logo" htmlWidth="200px" />
           </Link>
         </HStack>
-      </VStack>
+      </VStack> */}
     </Flex>
   );
 };

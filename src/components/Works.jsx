@@ -47,7 +47,7 @@ const Works = () => {
       justify="center"
       direction="column"
     >
-      <Heading mt="2rem" color="#504607">
+      <Heading mt="2rem" color="var(--darkgold)">
         Current Works
       </Heading>
       <Stack
@@ -65,7 +65,7 @@ const Works = () => {
             align="center"
             minW="300px"
             bg="whiteAlpha.900"
-            color="#504607"
+            color="var(--darkgold)"
             shadow="dark-lg"
           >
             <CardBody align="center">
@@ -90,13 +90,13 @@ const Works = () => {
               <ButtonGroup size="sm">
                 <Button
                   variant="ghost"
-                  sx={{ border: "solid 2px #70620a", color: "#70620a" }}
+                  sx={{ border: "solid 2px var(--gold)", color: "var(--gold)" }}
                 >
                   Learn more
                 </Button>
                 <Button
                   variant="solid"
-                  sx={{ bg: "#70620a", color: "#edfbf8" }}
+                  sx={{ bg: "var(--gold)", color: "var(--blue)" }}
                 >
                   Buy now
                 </Button>

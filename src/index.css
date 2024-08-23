@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
+/* ***** set variable colors ***** */
+
 :root {
+  --gold: #70620a;
+  --darkgold: #504607;
+  --blue: #edfbf8;
+  --orange: #ff681a;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -48,9 +55,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+/* button:hover {
   border-color: #646cff;
-}
+} */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

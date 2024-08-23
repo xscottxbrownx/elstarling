@@ -13,6 +13,8 @@ import signature from "../assets/signatureWhite.webp";
 import { IoClose, IoMenu } from "react-icons/io5";
 import LINKS from "../constants/pageLinks";
 
+// ***** fix hamburger menu styling *****
+
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -24,14 +26,14 @@ const Header = () => {
       bg="transparent"
       backdropFilter="blur(25px) invert(.15)"
       w="100vw"
-      h={{ base: "3rem", lg: "5rem" }}
+      h={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
       color="white"
     >
-      <Flex>
+      <Flex alignItems="center">
         <Image
           src={signature}
           alt="E L Starling signature"
-          h={{ base: "40px", lg: "70px" }}
+          h={{ base: "50px", md: "70px", lg: "100px" }}
           fallbackSrc="https://via.placeholder.com/70"
           ml={{ base: "1rem", lg: "2rem" }}
           mt={{ base: "3px", lg: "null" }}
@@ -57,29 +59,34 @@ const Header = () => {
             <Link
               key={link}
               href={link === "Home" ? "#" : `#${link}`}
-              _hover={{ textDecoration: "underline" }}
+              _hover={{
+                color: "var(--orange)",
+                fontWeight: "bold",
+              }}
             >
               {link}
             </Link>
           ))}
         </HStack>
         <IconButton
-          size={"md"}
+          size="md"
           icon={isOpen ? <IoClose /> : <IoMenu />}
-          aria-label={"Open Menu"}
+          aria-label="Open Menu"
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
+          background="transparent"
+          color="white"
         />
       </Flex>
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
-          <VStack as={"nav"} spacing={4}>
+          <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
               <Box
                 as="a"
                 key={link}
                 href={link === "Home" ? "#" : `#${link}`}
-                _hover={{ textDecoration: "underline" }}
+                _hover={{ color: "var(--orange)", fontWeight: "bold" }}
               >
                 {link}
               </Box>

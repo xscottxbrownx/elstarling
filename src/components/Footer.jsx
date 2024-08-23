@@ -1,16 +1,17 @@
 import {
   Box,
   Container,
+  HStack,
   Image,
   Link,
   Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiSubstack } from "react-icons/si";
-import SocialButton from "./SocialButton";
+// import { FaInstagram, FaTiktok } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { SiSubstack } from "react-icons/si";
+// import SocialButton from "./SocialButton";
 import signature from "../assets/signatureBlack.webp";
 import LINKS from "../constants/pageLinks";
 
@@ -20,7 +21,7 @@ export default function Footer() {
       as="footer"
       // bg={useColorModeValue("gray.50", "gray.900")}
       // color={useColorModeValue("gray.700", "gray.200")}
-      color="#70620a"
+      color="var(--gold)"
       // bg="#edfbf8"
       // bg="white"
       bg="whiteAlpha.900"
@@ -38,7 +39,7 @@ export default function Footer() {
         <Image
           src={signature}
           alt="E L Starling signature"
-          h={{ base: "75px", md: "100px", lg: "175px" }}
+          h={{ base: "75px" }}
           fallbackSrc="https://via.placeholder.com/70"
         />
         <Stack direction={"row"} spacing={6}>
@@ -48,7 +49,11 @@ export default function Footer() {
               key={link}
               href={link === "Home" ? "#" : `#${link}`}
               transition="0.3s"
-              _hover={{ color: "#504607", transform: "translateY(-5px)" }}
+              _hover={{
+                color: "var(--orange)",
+                transform: "translateY(-5px)",
+                fontWeight: "bold",
+              }}
             >
               {link}
             </Box>
@@ -70,13 +75,13 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Stack direction={"row"} spacing={6}>
+          {/* <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Instagram"}
               href={"https://www.instagram.com/e_l_starling/"}
               size={{ base: 8 }}
               // _hover={{
-              //   color: "#504607",
+              //   color: "var(--darkgold)",
               // }}
             >
               <FaInstagram />
@@ -92,24 +97,28 @@ export default function Footer() {
               href={"https://elstarling.substack.com/"}
               size={{ base: 8 }}
               _hover={{
-                color: "#504607",
+                color: "var(--darkgold)",
               }}
             >
               <SiSubstack />
             </SocialButton>
-          </Stack>
+          </Stack> */}
           <Text mb={{ base: "1rem", md: "0" }}>
             © 2023 E L Starling, All rights reserved.
           </Text>
-          <Link
-            href="https://www.scottxbrown.com"
-            isExternal
-            _hover={{
-              color: "#504607",
-            }}
-          >
-            Built by: SxB Development
-          </Link>
+          <HStack>
+            <Text>Built by:</Text>
+            <Link
+              href="https://www.scottxbrown.com"
+              isExternal
+              _hover={{
+                color: "var(--darkgold)",
+                textDecoration: "underline",
+              }}
+            >
+              SxB Development
+            </Link>
+          </HStack>
         </Container>
       </Box>
     </Box>

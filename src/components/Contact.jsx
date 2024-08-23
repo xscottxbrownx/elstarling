@@ -31,7 +31,7 @@ const Contact = () => {
       id="Contact"
       // bg={useColorModeValue("gray.100", "gray.900")}
       // bg="#504607"
-      bg="#edfbf8"
+      bg="var(--blue)"
       align="center"
       justify="center"
       mt="2rem"

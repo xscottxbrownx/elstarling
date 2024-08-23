@@ -1,22 +1,24 @@
+// ***** change this section, and use API to pull latest from instagram *****
+
 const Posts = () => (
   <div style={{ width: "100vw", display: "flex", justifyContent: "center" }}>
     <div
       id="Posts"
       style={{
-        width: "90vw",
+        width: "100vw",
         // minHeight: "25rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#70620a",
-        borderRadius: "10px",
+        backgroundColor: "var(--gold)",
+        // borderRadius: "10px",
         marginTop: "4rem",
         marginBottom: "4rem",
         paddingTop: "2rem",
         paddingBottom: "2rem",
         textAlign: "center",
-        color: "#edfbf8",
+        color: "var(--blue)",
       }}
     >
       POSTS SECTION

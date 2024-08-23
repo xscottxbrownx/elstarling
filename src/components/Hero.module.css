@@ -8,9 +8,10 @@
 }
 
 .arrows path {
-  stroke: #edfbf8;
+  /* stroke: #edfbf8; */
+  stroke: var(--orange);
   fill: transparent;
-  stroke-width: 2px;
+  stroke-width: 4px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
