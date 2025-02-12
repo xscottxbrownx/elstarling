@@ -21,7 +21,7 @@ export default function Footer() {
       as="footer"
       // bg={useColorModeValue("gray.50", "gray.900")}
       // color={useColorModeValue("gray.700", "gray.200")}
-      color="var(--gold)"
+      color="var(--primary)"
       // bg="#edfbf8"
       // bg="white"
       bg="whiteAlpha.900"
@@ -50,7 +50,7 @@ export default function Footer() {
               href={link === "Home" ? "#" : `#${link}`}
               transition="0.3s"
               _hover={{
-                color: "var(--orange)",
+                color: "var(--tertiary)",
                 transform: "translateY(-5px)",
                 fontWeight: "bold",
               }}
@@ -81,7 +81,7 @@ export default function Footer() {
               href={"https://www.instagram.com/e_l_starling/"}
               size={{ base: 8 }}
               // _hover={{
-              //   color: "var(--darkgold)",
+              //   color: "var(--tertiary)",
               // }}
             >
               <FaInstagram />
@@ -97,14 +97,14 @@ export default function Footer() {
               href={"https://elstarling.substack.com/"}
               size={{ base: 8 }}
               _hover={{
-                color: "var(--darkgold)",
+                color: "var(--tertiary)",
               }}
             >
               <SiSubstack />
             </SocialButton>
           </Stack> */}
           <Text mb={{ base: "1rem", md: "0" }}>
-            © 2023 E L Starling, All rights reserved.
+            © 2025 E L Starling, All rights reserved.
           </Text>
           <HStack>
             <Text>Built by:</Text>
@@ -112,7 +112,7 @@ export default function Footer() {
               href="https://www.scottxbrown.com"
               isExternal
               _hover={{
-                color: "var(--darkgold)",
+                color: "var(--tertiary)",
                 textDecoration: "underline",
               }}
             >

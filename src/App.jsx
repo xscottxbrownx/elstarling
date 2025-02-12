@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Posts from "./components/Posts";
 import Socials from "./components/Socials";
-import Works from "./components/Works";
+import Books from "./components/Books";
 
 const App = () => (
   <>
@@ -16,7 +16,7 @@ const App = () => (
       <Hero />
       <Socials />
       <About />
-      <Works />
+      <Books />
       <Posts />
       {/* <Contact /> */}
       <Contact2 />

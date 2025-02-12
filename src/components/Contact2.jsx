@@ -19,7 +19,7 @@ const Contact2 = () => {
     <Flex
       id="Contact"
       direction={{ base: "column", lg: "row" }}
-      color="var(--darkgold)"
+      color="var(--secondary)"
       mt="4rem"
       align={{ base: "center", lg: "flex-start" }}
       justify="space-evenly"
@@ -44,10 +44,10 @@ const Contact2 = () => {
               size="lg"
               fontSize="3xl"
               icon={<MdEmail />}
-              color="var(--orange)"
+              color="var(--tertiary)"
               bg="var(--blue)"
               _hover={{
-                bg: "var(--orange)",
+                bg: "var(--tertiary)",
                 color: "white",
               }}
               // onClick={onCopy}
@@ -66,10 +66,10 @@ const Contact2 = () => {
               size="lg"
               fontSize="3xl"
               icon={<FaInstagram />}
-              color="var(--orange)"
+              color="var(--tertiary)"
               bg="var(--blue)"
               _hover={{
-                bg: "var(--orange)",
+                bg: "var(--tertiary)",
                 color: "white",
               }}
               isRound
@@ -86,10 +86,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<FaXTwitter size="28px" />}
-              color="var(--orange)"
+              color="var(--tertiary)"
               bg="var(--blue)"
               _hover={{
-                bg: "var(--orange)",
+                bg: "var(--tertiary)",
                 color: "white",
               }}
               isRound
@@ -106,10 +106,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<FaTiktok size="28px" />}
-              color="var(--orange)"
+              color="var(--tertiary)"
               bg="var(--blue)"
               _hover={{
-                bg: "var(--orange)",
+                bg: "var(--tertiary)",
                 color: "white",
               }}
               isRound
@@ -126,10 +126,10 @@ const Contact2 = () => {
               variant="ghost"
               size="lg"
               icon={<SiSubstack size="28px" />}
-              color="var(--orange)"
+              color="var(--tertiary)"
               bg="var(--blue)"
               _hover={{
-                bg: "var(--orange)",
+                bg: "var(--tertiary)",
                 color: "white",
               }}
               isRound

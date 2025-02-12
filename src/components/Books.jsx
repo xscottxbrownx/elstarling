@@ -12,8 +12,8 @@ import {
   Heading,
 } from "@chakra-ui/react";
 
-const Works = () => {
-  const worksData = [
+const Books = () => {
+  const booksData = [
     {
       id: 1,
       title: "Boundless",
@@ -40,15 +40,15 @@ const Works = () => {
   return (
     <Flex
       as="section"
-      id="Works"
+      id="Books"
       w="100vw"
       my="4rem"
       align="center"
       justify="center"
       direction="column"
     >
-      <Heading mt="2rem" color="var(--darkgold)">
-        Current Works
+      <Heading mt="2rem" color="var(--secondary)">
+        BOOKS
       </Heading>
       <Stack
         direction={{ base: "column", lg: "row" }}
@@ -59,13 +59,13 @@ const Works = () => {
         px={{ base: "2rem", xl: "10rem" }}
         py={{ base: "3rem", lg: "5rem" }}
       >
-        {worksData.map((work) => (
+        {booksData.map((work) => (
           <Card
             key={work.id}
             align="center"
             minW="300px"
             bg="whiteAlpha.900"
-            color="var(--darkgold)"
+            color="var(--tertiary)"
             shadow="dark-lg"
           >
             <CardBody align="center">
@@ -109,4 +109,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Books;
