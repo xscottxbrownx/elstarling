@@ -12,7 +12,6 @@ const About = () => (
     w="100vw"
     align="center"
     justify="center"
-    mb="4rem"
     px={{ base: "2rem", xl: "1rem" }}
     py="10rem"
   >
@@ -47,11 +46,6 @@ const About = () => (
         pre-dawn hours, she can be found writing YA speculative fiction novels
         full of longing and twisty secrets with a cup of coffee at the ready and
         the ever-present hope of pastries.{" "}
-        {/* <Text as="b" sx={{ fontWeight: "extrabold" }}>
-            YA speculative fiction novels full of longing and twisty secrets
-          </Text>{" "}
-          with a cup of coffee at the ready and the ever-present hope of
-          pastries. */}
       </Text>
     </Box>
   </Flex>

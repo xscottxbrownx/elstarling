@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Posts from "./components/Posts";
 import Socials from "./components/Socials";
 import Books from "./components/Books";
+import ImageBreak from "./components/ImageBreak";
 
 const App = () => (
   <>
@@ -16,6 +17,7 @@ const App = () => (
       <Hero />
       <Socials />
       <About />
+      <ImageBreak />
       <Books />
       <Posts />
       {/* <Contact /> */}

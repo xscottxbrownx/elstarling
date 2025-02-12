@@ -13,6 +13,7 @@ const Socials = () => (
     // mb="2rem"
     h={{ base: "5rem" }}
     // borderBottom="solid 1px var(--darkgold)"
+    bg="white"
   >
     <Stack direction="row" spacing={{ base: 4, lg: 8 }}>
       {/* <SocialButton
