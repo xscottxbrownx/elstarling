@@ -45,16 +45,6 @@ const Header = () => {
           mr={{ base: "1rem", md: "2rem" }}
           display={{ base: "none", md: "flex" }}
         >
-          {/* {LINKS.map((link) => (
-            <Box
-              as="a"
-              key={link}
-              href={link === "Home" ? "#" : `#${link}`}
-              _hover={{ textDecoration: "underline" }}
-            >
-              {link}
-            </Box>
-          ))} */}
           {LINKS.map((link) => (
             <Link
               key={link}
