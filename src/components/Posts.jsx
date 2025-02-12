@@ -11,7 +11,6 @@ const Posts = () => (
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "var(--gold)",
         // borderRadius: "10px",
         marginTop: "4rem",
         marginBottom: "4rem",

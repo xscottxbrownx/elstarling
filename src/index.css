@@ -7,10 +7,9 @@
 /* ***** set variable colors ***** */
 
 :root {
-  --gold: #70620a;
-  --darkgold: #504607;
-  --blue: #edfbf8;
-  --orange: #ff681a;
+  --primary: #103a44;
+  --secondary: #85751f;
+  --orange: #a48a91;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

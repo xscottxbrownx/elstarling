@@ -1,5 +1,5 @@
-import aboutImage from "../assets/authorPortrait.webp";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+// import aboutImage from "../assets/authorPortrait.webp";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 // ****** conditional render link to bio (or shorter bio) if mobile view ******
 
@@ -9,7 +9,6 @@ const About = () => (
     as="section"
     id="About"
     direction={{ base: "column", md: "row" }}
-    bg="var(--gold)"
     w="100vw"
     align="center"
     justify="center"
@@ -17,10 +16,10 @@ const About = () => (
     px={{ base: "2rem", xl: "1rem" }}
     py="10rem"
   >
-    {/* <Heading mt="2rem" color="var(--blue)">
-      About
-    </Heading> */}
-    <Image
+    <Heading mt="2rem" color="var(--secondary)">
+      ABOUT the AUTHOR
+    </Heading>
+    {/* <Image
       src={aboutImage}
       alt="E L Starling"
       boxSize={{ base: "250px", md: "325px" }}
@@ -30,15 +29,15 @@ const About = () => (
         md: "https://via.placeholder.com/325",
       }}
       borderRadius="full"
-    />
+    /> */}
     <Box
       maxW={{ base: "400px", md: "300px", lg: "600px" }}
       mt={{ base: "2rem", md: "0" }}
       px="4rem"
     >
-      <Text color="var(--blue)" sx={{ lineHeight: "2", fontSize: "18px" }}>
+      <Text color="var(--primary)" sx={{ lineHeight: "2", fontSize: "18px" }}>
         <Text as="b" sx={{ fontWeight: "extrabold" }}>
-          EMILY “E.L.” STARLING
+          Emily “E.L.” Starling
         </Text>{" "}
         grew up in the center of California, midway between all the cities
         anyone has ever heard of. Today she lives in Portland, Oregon with her
