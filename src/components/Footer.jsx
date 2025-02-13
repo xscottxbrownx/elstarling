@@ -29,8 +29,8 @@ export default function Footer() {
             <Image
               src={logoSquare}
               alt="E L Starling logo"
-              h={{ base: "75px" }}
-              fallbackSrc="https://via.placeholder.com/75"
+              h="50px"
+              fallbackSrc="https://via.placeholder.com/50"
             />
             <Text>© 2025 E L Starling, All rights reserved.</Text>
           </>
@@ -40,8 +40,8 @@ export default function Footer() {
             <Image
               src={logoSquare}
               alt="E L Starling logo"
-              h={{ base: "75px" }}
-              fallbackSrc="https://via.placeholder.com/75"
+              h="50px"
+              fallbackSrc="https://via.placeholder.com/50"
             />
           </>
         )}

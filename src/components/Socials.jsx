@@ -27,7 +27,6 @@ const Socials = () => {
               fontSize={link.label === "Instagram" ? "3xl" : null}
               icon={link.icon}
               color="var(--tertiary)"
-              bg="var(--blue)"
               _hover={{
                 bg: "var(--tertiary)",
                 color: "white",
