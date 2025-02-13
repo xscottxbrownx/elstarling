@@ -12,8 +12,10 @@ const About = () => (
     w="100vw"
     align="center"
     justify="center"
+    mb="5rem"
     px={{ base: "2rem", xl: "1rem" }}
     py="10rem"
+    bg="var(--background)"
   >
     <Heading mt="2rem" color="var(--secondary)">
       ABOUT the AUTHOR

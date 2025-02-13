@@ -18,6 +18,7 @@ const Posts = () => (
         paddingBottom: "2rem",
         textAlign: "center",
         color: "var(--blue)",
+        backgroundColor: "var(--background)",
       }}
     >
       POSTS SECTION

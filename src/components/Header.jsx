@@ -23,11 +23,13 @@ const Header = () => {
       as="header"
       pos="fixed"
       zIndex="200"
-      bg="transparent"
-      backdropFilter="blur(25px) invert(.15)"
+      // bg="transparent"
+      // backdropFilter="blur(25px) invert(.15)"
+      bg="white"
       w="100vw"
-      h={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
-      color="white"
+      h={{ base: "3.5rem" }}
+      // h={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
+      color="var(--tertiary)"
     >
       <Flex alignItems="center">
         <Image

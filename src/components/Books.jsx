@@ -46,6 +46,7 @@ const Books = () => {
       align="center"
       justify="center"
       direction="column"
+      bg="var(--background)"
     >
       <Heading mt="2rem" color="var(--secondary)">
         BOOKS
