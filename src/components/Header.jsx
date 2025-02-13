@@ -88,7 +88,7 @@ const Header = () => {
           color="white"
         />
       </Flex>
-      {isOpen ? (
+      {isOpen && (
         <Box pb={4} hideFrom="md">
           <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
@@ -103,7 +103,7 @@ const Header = () => {
             ))}
           </VStack>
         </Box>
-      ) : null}
+      )}
     </Box>
   );
 };
