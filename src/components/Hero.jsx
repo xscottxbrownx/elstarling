@@ -1,9 +1,19 @@
 import hero from "../assets/heroAuthor.webp";
+import logo from "../assets/ELStarling_LRG_logo_BLK.webp";
 import { Image } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
 const Hero = () => (
   <div style={{ position: "relative", zIndex: 1 }}>
+    <Image
+      src={logo}
+      alt="EL Starling Logo"
+      position="absolute"
+      top="20%"
+      right="10px"
+      h="10vh"
+      w="50vw"
+    />
     <Image
       src={hero}
       alt="author E L Starling in front of books"
