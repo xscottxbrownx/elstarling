@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   Box,
   Flex,
@@ -9,7 +10,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import signature from "../assets/signatureWhite.webp";
+import logo from "../assets/ELStarlingLogoBLK.webp";
 import { IoClose, IoMenu } from "react-icons/io5";
 import LINKS from "../constants/pageLinks";
 
@@ -17,29 +18,46 @@ import LINKS from "../constants/pageLinks";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Box
       as="header"
       pos="fixed"
       zIndex="200"
-      // bg="transparent"
-      // backdropFilter="blur(25px) invert(.15)"
       bg="white"
       w="100vw"
-      h={{ base: "3.5rem" }}
-      // h={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
+      h="75px"
+      alignContent="center"
       color="var(--tertiary)"
     >
       <Flex alignItems="center">
-        <Image
-          src={signature}
-          alt="E L Starling signature"
-          h={{ base: "50px", md: "70px", lg: "100px" }}
-          fallbackSrc="https://via.placeholder.com/70"
-          ml={{ base: "1rem", lg: "2rem" }}
-          mt={{ base: "3px", lg: "null" }}
-        />
+        {hasScrolled && (
+          <Image
+            src={logo}
+            alt="E L Starling signature"
+            h="50px"
+            fallbackSrc="https://via.placeholder.com/50"
+            ml={{ base: "1rem", lg: "2rem" }}
+            mt={{ base: "3px", lg: "null" }}
+          />
+        )}
         <Spacer />
         <HStack
           as="nav"
