@@ -8,7 +8,7 @@ const ImageBreak = () => {
       alt="books stacked on a table"
       h="70vh"
       w="100vw"
-      objectFit="cover"
+      objectFit="fill"
     />
   );
 };
