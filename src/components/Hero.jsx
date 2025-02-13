@@ -1,13 +1,12 @@
-// import heroDesktop from "../assets/heroForest.webp";
-import heroMobile from "../assets/Screenshot 2023-10-04 at 2.06.11 PM.png";
+import hero from "../assets/heroAuthor.webp";
 import { Image } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
 const Hero = () => (
   <div style={{ position: "relative" }}>
     <Image
-      src={heroMobile}
-      alt="E L Starling in forest setting"
+      src={hero}
+      alt="author E L Starling in front of books"
       h="90vh"
       w="100vw"
       objectFit="cover"
