@@ -3,7 +3,7 @@ import { Image } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
 const Hero = () => (
-  <div style={{ position: "relative" }}>
+  <div style={{ position: "relative", zIndex: 1 }}>
     <Image
       src={hero}
       alt="author E L Starling in front of books"
