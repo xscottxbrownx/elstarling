@@ -15,8 +15,8 @@ const Contact2 = () => (
     id="Contact"
     direction={{ base: "column", lg: "row" }}
     color="var(--secondary)"
-    mt="5rem"
-    py="10rem"
+    mt="2.5rem"
+    py="5rem"
     align={{ base: "center", lg: "flex-start" }}
     justify="space-evenly"
     gap={24}
