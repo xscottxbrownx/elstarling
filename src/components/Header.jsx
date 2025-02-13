@@ -63,7 +63,7 @@ const Header = () => {
           as="nav"
           spacing={{ base: 3, md: 6 }}
           mr={{ base: "1rem", md: "2rem" }}
-          display={{ base: "none", md: "flex" }}
+          hideBelow="md"
         >
           {LINKS.map((link) => (
             <Link
@@ -82,14 +82,14 @@ const Header = () => {
           size="md"
           icon={isOpen ? <IoClose /> : <IoMenu />}
           aria-label="Open Menu"
-          display={{ md: "none" }}
+          hideFrom="md"
           onClick={isOpen ? onClose : onOpen}
           background="transparent"
           color="white"
         />
       </Flex>
       {isOpen ? (
-        <Box pb={4} display={{ md: "none" }}>
+        <Box pb={4} hideFrom="md">
           <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
               <Box
