@@ -1,5 +1,5 @@
 import hero from "../assets/heroAuthor.webp";
-import logo from "../assets/ELStarling_LRG_logo_BLK.webp";
+import logoLarge from "../assets/ELStarlingLrgLogoBLUE.webp";
 import { Box, Image } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
@@ -30,7 +30,7 @@ const Hero = () => (
       objectFit="cover"
     /> */}
       <Image
-        src={logo}
+        src={logoLarge}
         alt="EL Starling Logo"
         position="absolute"
         top="5%"

@@ -52,23 +52,30 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-/* button:hover {
-  border-color: #646cff;
-} */
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto #a48a91;
+}
+
+a:focus,
+a:focus-visible {
+  outline: 4px auto #a48a91;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #103a44;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #a48a91;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #e5e6df;
+  }
+  button:focus {
+    color: #a48a91;
+    border-color: #a48a91;
   }
 }

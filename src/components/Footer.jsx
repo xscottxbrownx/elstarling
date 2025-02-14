@@ -8,7 +8,7 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import logoSquare from "../assets/ELSsquareBLK.webp";
+import logoSquare from "../assets/ELSsmallSquareLogoBLUE.webp";
 
 export default function Footer() {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -29,8 +29,8 @@ export default function Footer() {
             <Image
               src={logoSquare}
               alt="E L Starling logo"
-              h="50px"
-              fallbackSrc="https://via.placeholder.com/50"
+              h="75px"
+              fallbackSrc="https://via.placeholder.com/75"
             />
             <Text>© 2025 E L Starling, All rights reserved.</Text>
           </>
@@ -40,8 +40,8 @@ export default function Footer() {
             <Image
               src={logoSquare}
               alt="E L Starling logo"
-              h="50px"
-              fallbackSrc="https://via.placeholder.com/50"
+              h="75px"
+              fallbackSrc="https://via.placeholder.com/75"
             />
           </>
         )}

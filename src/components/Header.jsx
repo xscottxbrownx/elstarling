@@ -10,7 +10,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import logo from "../assets/ELStarlingLogoBLK.webp";
+import logoMedium from "../assets/ELStarlingMedLogoBLUE.webp";
 import { IoClose, IoMenu } from "react-icons/io5";
 import LINKS from "../constants/pageLinks";
 
@@ -50,12 +50,11 @@ const Header = () => {
       <Flex alignItems="center">
         {hasScrolled && (
           <Image
-            src={logo}
+            src={logoMedium}
             alt="E L Starling signature"
             h="50px"
             fallbackSrc="https://via.placeholder.com/50"
-            ml={{ base: "1rem", lg: "2rem" }}
-            mt={{ base: "3px", lg: "null" }}
+            ml={{ base: "1rem", md: "2rem" }}
           />
         )}
         <Spacer />
@@ -79,17 +78,24 @@ const Header = () => {
           ))}
         </HStack>
         <IconButton
-          size="md"
-          icon={isOpen ? <IoClose /> : <IoMenu />}
+          size="lg"
+          icon={isOpen ? <IoClose size="28px" /> : <IoMenu size="28px" />}
           aria-label="Open Menu"
           hideFrom="md"
+          mr={{ base: "1rem", md: "2rem" }}
           onClick={isOpen ? onClose : onOpen}
-          background="transparent"
-          color="white"
+          variant="ghost"
+          rounded="full"
+          color="var(--tertiary)"
+          _hover={{
+            bg: "var(--tertiary)",
+            color: "white",
+          }}
         />
       </Flex>
+
       {isOpen && (
-        <Box pb={4} hideFrom="md">
+        <Box hideFrom="md">
           <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
               <Box
