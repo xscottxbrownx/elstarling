@@ -1,14 +1,12 @@
-// import aboutImage from "../assets/authorPortrait.webp";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 // ****** conditional render link to bio (or shorter bio) if mobile view ******
 
 const About = () => (
-  // <Container as="section" id="About" w="100vw" centerContent>
   <Flex
     as="section"
     id="About"
-    direction={{ base: "column", md: "row" }}
+    direction={{ base: "column", lg: "row" }}
     w="100vw"
     align="center"
     justify="center"
@@ -17,24 +15,18 @@ const About = () => (
     py="10rem"
     bg="var(--background)"
   >
-    <Heading mt="2rem" color="var(--secondary)">
-      ABOUT the AUTHOR
+    <Heading
+      mt="2rem"
+      color="var(--secondary)"
+      whiteSpace="pre-line"
+      textAlign="center"
+    >
+      ABOUT{"\n"}the{"\n"}AUTHOR
     </Heading>
-    {/* <Image
-      src={aboutImage}
-      alt="E L Starling"
-      boxSize={{ base: "250px", md: "325px" }}
-      objectFit="cover"
-      fallbackSrc={{
-        base: "https://via.placeholder.com/250",
-        md: "https://via.placeholder.com/325",
-      }}
-      borderRadius="full"
-    /> */}
     <Box
-      maxW={{ base: "400px", md: "300px", lg: "600px" }}
-      mt={{ base: "2rem", md: "0" }}
-      px="4rem"
+      maxW={{ base: "400px", md: "600px", xl: "1000px" }}
+      mt={{ base: "2rem", lg: "0" }}
+      px={{ base: "1rem", lg: "4rem" }}
     >
       <Text color="var(--primary)" sx={{ lineHeight: "2", fontSize: "18px" }}>
         <Text as="b" sx={{ fontWeight: "extrabold" }}>
