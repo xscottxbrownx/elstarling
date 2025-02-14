@@ -43,9 +43,11 @@ const Header = () => {
       zIndex="200"
       bg="white"
       w="100vw"
-      h="75px"
+      minHeight="75px"
       alignContent="center"
       color="var(--tertiary)"
+      pt={isOpen ? "1rem" : "0"}
+      pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
         {hasScrolled && (
@@ -95,7 +97,7 @@ const Header = () => {
       </Flex>
 
       {isOpen && (
-        <Box hideFrom="md">
+        <Box hideFrom="md" background="white" pt="3rem">
           <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
               <Box
