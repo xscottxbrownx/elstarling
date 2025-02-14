@@ -16,7 +16,7 @@ const Contact2 = () => {
 
   return (
     <Flex
-      id="Contact"
+      id="contact"
       direction={{ base: "column", lg: "row" }}
       color="var(--secondary)"
       mt="2.5rem"

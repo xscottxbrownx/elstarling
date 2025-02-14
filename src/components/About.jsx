@@ -5,7 +5,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 const About = () => (
   <Flex
     as="section"
-    id="About"
+    id="about"
     direction={{ base: "column", lg: "row" }}
     w="100vw"
     align="center"

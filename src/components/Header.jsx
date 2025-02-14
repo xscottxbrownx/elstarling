@@ -50,7 +50,7 @@ const Header = () => {
       pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
-        {hasScrolled && (
+        {(hasScrolled || isOpen) && (
           <Image
             src={logoMedium}
             alt="E L Starling signature"
@@ -69,13 +69,13 @@ const Header = () => {
           {LINKS.map((link) => (
             <Link
               key={link}
-              href={link === "Home" ? "#" : `#${link}`}
+              href={link === "home" ? "#" : `#${link}`}
               fontWeight="bold"
               _hover={{
                 textDecoration: "underline",
               }}
             >
-              {link}
+              {link.toUpperCase()}
             </Link>
           ))}
         </HStack>
@@ -98,7 +98,7 @@ const Header = () => {
 
       {isOpen && (
         <Box hideFrom="md" background="white" pt="3rem">
-          <VStack as="nav" spacing={4}>
+          <VStack as="nav" spacing={12}>
             {LINKS.map((link) => (
               <Box
                 as="a"
@@ -109,7 +109,7 @@ const Header = () => {
                   textDecoration: "underline",
                 }}
               >
-                {link}
+                {link.toUpperCase()}
               </Box>
             ))}
           </VStack>
