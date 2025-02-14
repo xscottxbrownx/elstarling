@@ -70,9 +70,9 @@ const Header = () => {
             <Link
               key={link}
               href={link === "Home" ? "#" : `#${link}`}
+              fontWeight="bold"
               _hover={{
-                color: "var(--tertiary)",
-                fontWeight: "bold",
+                textDecoration: "underline",
               }}
             >
               {link}
@@ -104,7 +104,10 @@ const Header = () => {
                 as="a"
                 key={link}
                 href={link === "Home" ? "#" : `#${link}`}
-                _hover={{ color: "var(--tertiary)", fontWeight: "bold" }}
+                fontWeight="bold"
+                _hover={{
+                  textDecoration: "underline",
+                }}
               >
                 {link}
               </Box>
