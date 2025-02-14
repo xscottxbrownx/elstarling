@@ -46,7 +46,7 @@ const Header = () => {
       minHeight="75px"
       alignContent="center"
       color="var(--tertiary)"
-      pt={isOpen ? "1rem" : "0"}
+      pt={isOpen ? "0.77rem" : "0"}
       pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
