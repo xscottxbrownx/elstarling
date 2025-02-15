@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Image,
-  Heading,
   HStack,
   Text,
   useBreakpointValue,
@@ -20,10 +19,39 @@ const Books = () => {
   const renderMobile = (
     <VStack>
       <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
-      <VStack bg="purple" w="100%">
-        <Heading color="var(--secondary)">Genius Links Here</Heading>
-        <Heading color="var(--secondary)">Spotify Link Here</Heading>
-        <Heading color="var(--secondary)">Pinterest Link Here</Heading>
+      <VStack w="100%">
+        <Button
+          border="solid black 1px"
+          h="56px"
+          w={{ base: "215px", md: "280px" }}
+        >
+          <GiBrain size="36px" color="var(--secondary)" />
+          <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            Preorder
+          </Text>
+        </Button>
+        <Button
+          border="solid black 1px"
+          h="56px"
+          w={{ base: "215px", md: "280px" }}
+        >
+          {/* <FaSpotify size="48px" color="#1ED760" /> */}
+          <FaSpotify size="36px" color="var(--secondary)" />
+          <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            Playlist
+          </Text>
+        </Button>
+        <Button
+          border="solid black 1px"
+          h="56px"
+          w={{ base: "215px", md: "280px" }}
+        >
+          {/* <FaPinterest size="48px" color="#E60023" /> */}
+          <FaPinterest size="36px" color="var(--secondary)" />
+          <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            Moodboard
+          </Text>
+        </Button>
       </VStack>
     </VStack>
   );
