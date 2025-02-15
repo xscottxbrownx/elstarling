@@ -12,15 +12,15 @@ const About = () => (
     align="center"
     justify="center"
     mb="2.5rem"
-    px={{ base: "2rem", lg: "5rem", xl: "8rem" }}
-    py="10rem"
+    px={{ base: "2rem", lg: "5rem", xl: "18rem" }}
+    py="6rem"
     bg="var(--background)"
   >
     <Image
       src={AboutStar}
       alt="About the Author"
       mt="2rem"
-      w={{ base: "75%", md: "45%", lg: "30%", xl: "25%" }}
+      w={{ base: "75%", md: "45%", lg: "30%" }}
       height="auto"
     />
     <Box
