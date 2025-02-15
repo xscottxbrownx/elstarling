@@ -11,6 +11,7 @@ import {
   Text,
   Heading,
 } from "@chakra-ui/react";
+import BooksStar from "../assets/BooksStar.webp";
 
 const Books = () => {
   const booksData = [
@@ -49,9 +50,7 @@ const Books = () => {
       direction="column"
       bg="var(--background)"
     >
-      <Heading mt="2rem" color="var(--secondary)">
-        BOOKS
-      </Heading>
+      <Image src={BooksStar} alt="Books by author" mt="2rem" w="75%" />
       <Stack
         direction={{ base: "column", lg: "row" }}
         w="90vw"

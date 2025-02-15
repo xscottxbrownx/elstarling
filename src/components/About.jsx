@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import AboutStar from "../assets/AboutStar.webp";
 
 // ****** conditional render link to bio (or shorter bio) if mobile view ******
 
@@ -11,18 +12,17 @@ const About = () => (
     align="center"
     justify="center"
     mb="2.5rem"
-    px={{ base: "2rem", xl: "1rem" }}
+    px={{ base: "2rem", lg: "5rem", xl: "8rem" }}
     py="10rem"
     bg="var(--background)"
   >
-    <Heading
+    <Image
+      src={AboutStar}
+      alt="About the Author"
       mt="2rem"
-      color="var(--secondary)"
-      whiteSpace="pre-line"
-      textAlign="center"
-    >
-      ABOUT{"\n"}the{"\n"}AUTHOR
-    </Heading>
+      w={{ base: "75%", md: "45%", lg: "30%", xl: "25%" }}
+      height="auto"
+    />
     <Box
       maxW={{ base: "400px", md: "600px", xl: "1000px" }}
       mt={{ base: "2rem", lg: "0" }}
@@ -43,7 +43,6 @@ const About = () => (
       </Text>
     </Box>
   </Flex>
-  // </Container>
 );
 
 export default About;

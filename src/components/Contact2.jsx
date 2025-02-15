@@ -1,8 +1,8 @@
 import {
   Flex,
-  Heading,
   HStack,
   IconButton,
+  Image,
   Link,
   Text,
   Tooltip,
@@ -10,6 +10,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import contactLinks from "../constants/contactLinks";
+import ContactStar from "../assets/ContactStar.webp";
+
+// ***** add signup for substack? *****
 
 const Contact2 = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -26,7 +29,11 @@ const Contact2 = () => {
       gap={24}
     >
       <VStack spacing={4} ml={{ base: "0", lg: "2rem" }}>
-        <Heading fontSize={{ base: "4xl", md: "5xl" }}>Contact</Heading>
+        <Image
+          src={ContactStar}
+          alt="Contact the author"
+          w={{ base: "75%", md: "50%" }}
+        />
         <HStack align="center" justify="space-around" direction="row">
           {contactLinks.map(({ label, href, icon }) => (
             <Tooltip key={label} label={label} closeOnClick={false} hasArrow>
