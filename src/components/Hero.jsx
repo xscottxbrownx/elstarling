@@ -1,6 +1,6 @@
-import heroDesktop from "../assets/heroAuthor.webp";
+import heroDesktop from "../assets/heroAuthorDesktop.webp";
 import heroMobile from "../assets/heroAuthorMobile.webp";
-import logoLarge from "../assets/ELStarlingLrgLogoBLUE.webp";
+// import logoLarge from "../assets/ELStarlingLrgLogoBLUE.webp";
 import { Box, Image, useBreakpointValue } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
@@ -33,7 +33,7 @@ const Hero = () => {
       w="calc(100vw - 8rem)"
       objectFit="cover"
     /> */}
-        <Image
+        {/* <Image
           src={logoLarge}
           alt="EL Starling Logo"
           position="absolute"
@@ -42,15 +42,13 @@ const Hero = () => {
           h="10vh"
           w={{ base: "50vw", md: "40vw" }}
           hideBelow="lg"
-        />
+        /> */}
         <Image
           src={isMobile ? heroMobile : heroDesktop}
           alt="author E L Starling in front of books"
           mt={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
-          // mx="auto"
           h="75vh"
           w="100%"
-          // objectFit="cover"
           objectFit={{ base: "cover", lg: "contain" }}
         />
       </Box>
