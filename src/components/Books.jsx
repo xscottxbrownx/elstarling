@@ -1,42 +1,41 @@
 import {
-  Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
-  Divider,
+  Box,
   Flex,
   Image,
-  Stack,
-  Text,
   Heading,
+  HStack,
+  useBreakpointValue,
+  VStack,
 } from "@chakra-ui/react";
 import BooksStar from "../assets/BooksStar.webp";
+import BookCover from "../assets/BoundByStars.webp";
 
 const Books = () => {
-  const booksData = [
-    {
-      id: 1,
-      title: "Boundless",
-      img: "/testrocket.gif",
-      alt: "rocket ship",
-      description: "some short description of book",
-    },
-    {
-      id: 2,
-      title: "The Forever of it All",
-      img: "/testtime.gif",
-      alt: "hourglass",
-      description: "some short description of book",
-    },
-    {
-      id: 3,
-      title: "Between Shadow and Light",
-      img: "/testlight.gif",
-      alt: "light bulb",
-      description: "some short description of book",
-    },
-  ];
+  const isMobile = useBreakpointValue({ base: true, md: false });
+
+  const renderMobile = (
+    <VStack>
+      <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
+      <VStack bg="purple" w="100%">
+        <Heading color="var(--secondary)">Genius Links Here</Heading>
+        <Heading color="var(--secondary)">Spotify Link Here</Heading>
+        <Heading color="var(--secondary)">Pinterest Link Here</Heading>
+      </VStack>
+    </VStack>
+  );
+
+  const renderDesktop = (
+    <HStack>
+      <Box flex="2">
+        <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
+      </Box>
+      <VStack bg="purple" flex="2">
+        <Heading color="var(--secondary)">Genius Links Here</Heading>
+        <Heading color="var(--secondary)">Spotify Link Here</Heading>
+        <Heading color="var(--secondary)">Pinterest Link Here</Heading>
+      </VStack>
+    </HStack>
+  );
 
   return (
     <Flex
@@ -44,68 +43,15 @@ const Books = () => {
       id="books"
       w="100vw"
       my="2.5rem"
-      py="10rem"
+      pt="2rem"
+      pb={isMobile ? "2rem" : "1rem"}
+      px={{ base: "2rem", lg: "5rem", xl: "8rem" }}
       align="center"
-      justify="center"
       direction="column"
       bg="var(--background)"
     >
-      <Image src={BooksStar} alt="Books by author" mt="2rem" w="75%" />
-      <Stack
-        direction={{ base: "column", lg: "row" }}
-        w="90vw"
-        spacing={{ base: 10, lg: 8 }}
-        align="center"
-        justify="space-around"
-        px={{ base: "2rem", xl: "10rem" }}
-        py={{ base: "3rem", lg: "5rem" }}
-      >
-        {booksData.map((work) => (
-          <Card
-            key={work.id}
-            align="center"
-            minW="300px"
-            bg="whiteAlpha.900"
-            color="var(--tertiary)"
-            shadow="dark-lg"
-          >
-            <CardBody align="center">
-              <Image
-                src={work.img}
-                alt={work.alt}
-                boxSize="200px"
-                objectFit="cover"
-                borderRadius="lg"
-              />
-              <Stack mt={2} spacing={3}>
-                <Heading size="md" mb={3}>
-                  {work.title}
-                </Heading>
-                <Text>{work.description}</Text>
-                <Text>{work.description}</Text>
-                <Text>{work.description}</Text>
-              </Stack>
-            </CardBody>
-            <Divider color="gray.300" />
-            <CardFooter>
-              <ButtonGroup size="sm">
-                <Button
-                  variant="ghost"
-                  sx={{ border: "solid 2px var(--gold)", color: "var(--gold)" }}
-                >
-                  Learn more
-                </Button>
-                <Button
-                  variant="solid"
-                  sx={{ bg: "var(--gold)", color: "var(--blue)" }}
-                >
-                  Buy now
-                </Button>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-        ))}
-      </Stack>
+      <Image src={BooksStar} alt="Books by author" w="75%" />
+      {isMobile ? renderMobile : renderDesktop}
     </Flex>
   );
 };
