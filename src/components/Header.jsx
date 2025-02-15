@@ -10,11 +10,9 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import logoMedium from "../assets/ELStarlingMedLogoBLUE.webp";
 import { IoClose, IoMenu } from "react-icons/io5";
 import LINKS from "../constants/pageLinks";
-
-// ***** fix hamburger menu styling *****
+import logoMedium from "../assets/ELStarlingMedLogoBLUE.webp";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -103,7 +101,7 @@ const Header = () => {
               <Box
                 as="a"
                 key={link}
-                href={link === "Home" ? "#" : `#${link}`}
+                href={link === "home" ? "#" : `#${link}`}
                 onClick={onClose}
                 fontWeight="bold"
                 _hover={{
