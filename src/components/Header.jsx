@@ -7,6 +7,7 @@ import {
   Image,
   Link,
   Spacer,
+  useBreakpointValue,
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
@@ -17,6 +18,7 @@ import logoMedium from "../assets/ELStarlingMedLogoBLUE.webp";
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [hasScrolled, setHasScrolled] = useState(false);
+  const isMobile = useBreakpointValue({ base: true, lg: false });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +50,7 @@ const Header = () => {
       pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
-        {(hasScrolled || isOpen) && (
+        {(hasScrolled || isOpen || isMobile) && (
           <Image
             src={logoMedium}
             alt="E L Starling signature"
