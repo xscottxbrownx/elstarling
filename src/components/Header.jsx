@@ -104,6 +104,7 @@ const Header = () => {
                 as="a"
                 key={link}
                 href={link === "Home" ? "#" : `#${link}`}
+                onClick={onClose}
                 fontWeight="bold"
                 _hover={{
                   textDecoration: "underline",
