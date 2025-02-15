@@ -98,8 +98,7 @@ const Header = () => {
         <Box hideFrom="md" background="white" pt="3rem">
           <VStack as="nav" spacing={12}>
             {LINKS.map((link) => (
-              <Box
-                as="a"
+              <Link
                 key={link}
                 href={link === "home" ? "#" : `#${link}`}
                 onClick={onClose}
@@ -109,7 +108,7 @@ const Header = () => {
                 }}
               >
                 {link.toUpperCase()}
-              </Box>
+              </Link>
             ))}
           </VStack>
         </Box>
