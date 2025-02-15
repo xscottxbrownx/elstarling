@@ -3,6 +3,7 @@ import {
   Flex,
   Image,
   HStack,
+  Link,
   Text,
   useBreakpointValue,
   VStack,
@@ -76,13 +77,20 @@ const Books = () => {
             Playlist
           </Text>
         </Button>
-        <Button border="solid black 1px" h="56px" w="280px">
-          {/* <FaPinterest size="48px" color="#E60023" /> */}
-          <FaPinterest size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
-            Moodboard
-          </Text>
-        </Button>
+        <Link
+          href="https://www.pinterest.com/emilylstarling/boundless/"
+          isExternal
+        >
+          <Button border="solid black 1px" h="56px" w="280px">
+            {/* <FaPinterest size="48px" color="#E60023" /> */}
+            <HStack>
+              <FaPinterest size="36px" color="var(--secondary)" />
+              <Text color="var(--secondary)" ml="10px" fontSize="24px">
+                Moodboard
+              </Text>
+            </HStack>
+          </Button>
+        </Link>
       </VStack>
     </HStack>
   );
