@@ -21,8 +21,7 @@ const Contact2 = () => {
       id="contact"
       direction={{ base: "column", lg: "row" }}
       color="var(--secondary)"
-      mt="2.5rem"
-      py="5rem"
+      py="6rem"
       align={{ base: "center", lg: "flex-start" }}
       justify="space-evenly"
       gap={24}
@@ -31,7 +30,7 @@ const Contact2 = () => {
         <Image
           src={ContactStar}
           alt="Contact the author"
-          w={{ base: "75%", md: "50%" }}
+          w={{ base: "75%", md: "50%", lg: "33%", xl: "40%" }}
         />
         {isMobile ? (
           <>

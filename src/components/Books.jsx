@@ -8,13 +8,14 @@ import {
   VStack,
   Button,
 } from "@chakra-ui/react";
-import BooksStar from "../assets/BooksStar.webp";
+import BooksStarDesktop from "../assets/BooksStar.webp";
+import BooksStarMobile from "../assets/BooksStarMobile.webp";
 import BookCover from "../assets/BoundByStars.webp";
 import { FaPinterest, FaSpotify } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 
 const Books = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const isMobile = useBreakpointValue({ base: true, lg: false });
 
   const renderMobile = (
     <VStack>
@@ -92,14 +93,17 @@ const Books = () => {
       id="books"
       w="100vw"
       my="2.5rem"
-      pt="2rem"
-      pb={isMobile ? "2rem" : "1rem"}
+      py="6rem"
       px={{ base: "2rem", lg: "5rem", xl: "18rem" }}
       align="center"
       direction="column"
       bg="var(--background)"
     >
-      <Image src={BooksStar} alt="Books by author" w="75%" />
+      <Image
+        src={isMobile ? BooksStarMobile : BooksStarDesktop}
+        alt="Books by E L Starling"
+        w={{ base: "70%", md: "45%", lg: "75%" }}
+      />
       {isMobile ? renderMobile : renderDesktop}
     </Flex>
   );
