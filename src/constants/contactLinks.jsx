@@ -1,6 +1,5 @@
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
 
 const contactLinks = [
@@ -15,13 +14,8 @@ const contactLinks = [
     icon: <FaInstagram />,
   },
   {
-    label: "Twitter / X",
-    href: "#",
-    icon: <FaXTwitter size="28px" />,
-  },
-  {
     label: "Tiktok",
-    href: "#",
+    href: "https://www.tiktok.com/@elstarling",
     icon: <FaTiktok size="28px" />,
   },
   {
