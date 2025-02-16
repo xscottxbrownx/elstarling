@@ -62,7 +62,7 @@ const Header = () => {
         <Spacer />
         <HStack
           as="nav"
-          spacing={{ base: 3, md: 6 }}
+          spacing={{ base: 2, md: 4 }}
           mr={{ base: "1rem", md: "2rem" }}
           hideBelow="md"
         >
@@ -71,6 +71,8 @@ const Header = () => {
               key={link}
               href={link === "home" ? "#" : `#${link}`}
               fontWeight="bold"
+              fontSize="22px"
+              p="0.75rem"
               _hover={{
                 textDecoration: "underline",
               }}
@@ -98,13 +100,15 @@ const Header = () => {
 
       {isOpen && (
         <Box hideFrom="md" background="white" pt="3rem">
-          <VStack as="nav" spacing={12}>
+          <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
               <Link
                 key={link}
                 href={link === "home" ? "#" : `#${link}`}
                 onClick={onClose}
                 fontWeight="bold"
+                fontSize="22px"
+                p="0.75rem"
                 _hover={{
                   textDecoration: "underline",
                 }}
