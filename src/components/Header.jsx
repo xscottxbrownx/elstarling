@@ -50,15 +50,16 @@ const Header = () => {
       pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
-        {(hasScrolled || isOpen || isMobile) && (
-          <Image
-            src={logoMedium}
-            alt="E L Starling signature"
-            h="50px"
-            fallbackSrc="https://via.placeholder.com/50"
-            ml={{ base: "1rem", md: "2rem" }}
-          />
-        )}
+        <Image
+          src={logoMedium}
+          alt="E L Starling signature"
+          h="50px"
+          fallbackSrc="https://via.placeholder.com/50"
+          ml={{ base: "1rem", md: "2rem" }}
+          style={{
+            display: hasScrolled || isMobile || isOpen ? "block" : "none",
+          }}
+        />
         <Spacer />
         <HStack
           as="nav"
