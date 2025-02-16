@@ -51,7 +51,6 @@ export default function Footer() {
             href="https://www.scottxbrown.com"
             isExternal
             _hover={{
-              color: "var(--tertiary)",
               textDecoration: "underline",
             }}
           >
