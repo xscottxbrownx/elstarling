@@ -14,7 +14,7 @@ const contactLinks = [
     icon: <FaInstagram />,
   },
   {
-    label: "Tiktok",
+    label: "TikTok",
     href: "https://www.tiktok.com/@elstarling",
     icon: <FaTiktok size="28px" />,
   },
