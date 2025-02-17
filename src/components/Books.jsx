@@ -109,7 +109,7 @@ const Books = () => {
     >
       <Image
         src={isMobile ? BooksStarMobile : BooksStarDesktop}
-        alt="Books by E L Starling"
+        alt="Books written by E L Starling"
         w={{ base: "70%", md: "45%", lg: "75%" }}
       />
       {isMobile ? renderMobile : renderDesktop}

@@ -15,7 +15,10 @@ const Posts2 = () => {
       justify="center"
       mb="2.5rem"
     >
-      <Image src={photos} />
+      <Image
+        src={photos}
+        alt="Day in the Life of E L Starling - coffee, cat, forest, and art"
+      />
     </Flex>
   );
 };

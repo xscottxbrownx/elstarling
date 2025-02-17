@@ -52,7 +52,7 @@ const Header = () => {
       <Flex alignItems="center">
         <Image
           src={logoMedium}
-          alt="E L Starling signature"
+          alt="E L Starling logo"
           h="50px"
           fallbackSrc="https://via.placeholder.com/50"
           ml={{ base: "1rem", md: "2rem" }}

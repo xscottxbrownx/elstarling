@@ -28,7 +28,7 @@ export default function Footer() {
           <>
             <Image
               src={logoSquare}
-              alt="E L Starling logo"
+              alt="E L Starling square logo"
               h="75px"
               fallbackSrc="https://via.placeholder.com/75"
             />
