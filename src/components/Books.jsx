@@ -22,16 +22,18 @@ const Books = () => {
     <VStack>
       <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
       <VStack w="100%">
-        <Button
-          border="solid var(--secondary) 1px"
-          h="56px"
-          w={{ base: "215px", md: "280px" }}
-        >
-          <GiBrain size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
-            Preorder
-          </Text>
-        </Button>
+        <Link href="https://geni.us/KYZaNwK" isExternal>
+          <Button
+            border="solid var(--secondary) 1px"
+            h="56px"
+            w={{ base: "215px", md: "280px" }}
+          >
+            <GiBrain size="36px" color="var(--secondary)" />
+            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+              Preorder
+            </Text>
+          </Button>
+        </Link>
         <Button
           border="solid var(--secondary) 1px"
           h="56px"
@@ -43,17 +45,22 @@ const Books = () => {
             Playlist
           </Text>
         </Button>
-        <Button
-          border="solid var(--secondary) 1px"
-          h="56px"
-          w={{ base: "215px", md: "280px" }}
+        <Link
+          href="https://www.pinterest.com/emilylstarling/boundless/"
+          isExternal
         >
-          {/* <FaPinterest size="48px" color="#E60023" /> */}
-          <FaPinterest size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
-            Moodboard
-          </Text>
-        </Button>
+          <Button
+            border="solid var(--secondary) 1px"
+            h="56px"
+            w={{ base: "215px", md: "280px" }}
+          >
+            {/* <FaPinterest size="48px" color="#E60023" /> */}
+            <FaPinterest size="36px" color="var(--secondary)" />
+            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+              Moodboard
+            </Text>
+          </Button>
+        </Link>
       </VStack>
     </VStack>
   );
@@ -64,12 +71,14 @@ const Books = () => {
         <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
       </Box>
       <VStack flex="1" py="1rem" alignItems="start">
-        <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-          <GiBrain size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
-            Preorder
-          </Text>
-        </Button>
+        <Link href="https://geni.us/KYZaNwK" isExternal>
+          <Button border="solid var(--secondary) 1px" h="56px" w="280px">
+            <GiBrain size="36px" color="var(--secondary)" />
+            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+              Preorder
+            </Text>
+          </Button>
+        </Link>
         <Button border="solid var(--secondary) 1px" h="56px" w="280px">
           {/* <FaSpotify size="48px" color="#1ED760" /> */}
           <FaSpotify size="36px" color="var(--secondary)" />
