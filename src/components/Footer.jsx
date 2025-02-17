@@ -19,7 +19,7 @@ export default function Footer() {
         src={logoSquare}
         alt="E L Starling square logo"
         h="75px"
-        fallbackSrc="https://via.placeholder.com/75"
+        fallbackSrc="https://placehold.co/75"
       />
       <Text>© 2025 E L Starling, All rights reserved.</Text>
     </>
@@ -32,7 +32,7 @@ export default function Footer() {
         src={logoSquare}
         alt="E L Starling logo"
         h="75px"
-        fallbackSrc="https://via.placeholder.com/75"
+        fallbackSrc="https://placehold.co/75"
       />
     </>
   );
