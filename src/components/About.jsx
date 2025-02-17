@@ -10,9 +10,9 @@ const About = () => {
         Emily “E.L.” Starling
       </Text>{" "}
       lives in Portland, Oregon with her high school sweetheart and an orange
-      cat named Pigeon. In her pre-dawn hours, writes speculative fiction full
-      of longing and twisty secrets with a cup of coffee at the ready and the
-      ever-present hope of pastries.{" "}
+      cat named Pigeon. In her pre-dawn hours, she writes speculative fiction
+      full of longing and twisty secrets with a cup of coffee at the ready and
+      the ever-present hope of pastries.{" "}
     </Text>
   );
 

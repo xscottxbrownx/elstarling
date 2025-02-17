@@ -1,5 +1,5 @@
-import heroDesktop from "../assets/heroAuthorDesktop.webp";
-import heroMobile from "../assets/heroAuthorMobile.webp";
+import heroDesktop from "../assets/heroSplashDesktop.webp";
+import heroMobile from "../assets/heroSplashMobile.webp";
 import { Box, Image, Link, useBreakpointValue } from "@chakra-ui/react";
 import styles from "./Hero.module.css";
 
@@ -14,7 +14,8 @@ const Hero = () => {
         mt={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
         h="75vh"
         w="100%"
-        objectFit={{ base: "cover", lg: "contain" }}
+        // objectFit={{ base: "contain", lg: "contain" }}
+        objectFit="contain"
       />
       <Link href="#about" hideBelow="md">
         <svg className={styles.arrows}>

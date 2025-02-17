@@ -6,7 +6,7 @@ const ImageBreak = () => {
     <Image
       src={books}
       alt="books stacked on a table"
-      h={{ base: "40vh", lg: "50vh", xl: "60vh" }}
+      h={{ base: "40vh", lg: "50vh", xl: "62vh" }}
       w="100vw"
       objectFit="fill"
     />
