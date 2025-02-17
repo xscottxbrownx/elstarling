@@ -11,6 +11,9 @@ const Hero = () => {
       <Image
         src={isMobile ? heroMobile : heroDesktop}
         alt="author E L Starling in front of books"
+        fallback={
+          isMobile ? "https://placehold.co/320" : "https://placehold.co/1024"
+        }
         mt={{ base: "3.5rem", md: "5rem", lg: "7rem" }}
         h="75vh"
         w="100%"

@@ -56,6 +56,7 @@ const Contact2 = () => {
         <Image
           src={ContactStar}
           alt="Contact the author"
+          fallback="https://placehold.co/320"
           w={{ base: "75%", md: "50%", lg: "33%", xl: "40%" }}
         />
         {isMobile ? renderMobile : renderDesktop}

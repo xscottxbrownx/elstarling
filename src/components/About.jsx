@@ -47,6 +47,7 @@ const About = () => {
       <Image
         src={AboutStar}
         alt="About the Author (E L Starling)"
+        fallback="https://placehold.co/250"
         mt="2rem"
         w={{ base: "75%", md: "45%", lg: "30%" }}
         height="auto"

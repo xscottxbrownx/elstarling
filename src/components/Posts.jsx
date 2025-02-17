@@ -18,6 +18,9 @@ const Posts2 = () => {
       <Image
         src={photos}
         alt="Day in the Life of E L Starling - coffee, cat, forest, and art"
+        fallback={
+          isMobile ? "https://placehold.co/320" : "https://placehold.co/768"
+        }
       />
     </Flex>
   );

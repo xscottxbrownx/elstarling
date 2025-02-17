@@ -76,7 +76,7 @@ const Header = () => {
           src={logoMedium}
           alt="E L Starling logo"
           h="50px"
-          fallbackSrc="https://via.placeholder.com/50"
+          fallbackSrc="https://placehold.co/100x50"
           ml={{ base: "1rem", md: "2rem" }}
           style={{
             display: hasScrolled || isMobile || isOpen ? "block" : "none",

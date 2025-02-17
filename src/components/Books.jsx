@@ -20,7 +20,12 @@ const Books = () => {
 
   const renderMobile = (
     <VStack>
-      <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
+      <Image
+        src={BookCover}
+        alt="Bound By Stars book"
+        fallback="https://placehold.co/250x200"
+        objectFit="cover"
+      />
       <VStack w="100%">
         <Link href="https://geni.us/KYZaNwK" isExternal>
           <Button
@@ -68,7 +73,12 @@ const Books = () => {
   const renderDesktop = (
     <HStack>
       <Box flex="3">
-        <Image src={BookCover} alt="Bound By Stars book" objectFit="cover" />
+        <Image
+          src={BookCover}
+          alt="Bound By Stars book"
+          fallback="https://placehold.co/600x300"
+          objectFit="cover"
+        />
       </Box>
       <VStack flex="1" py="1rem" alignItems="start">
         <Link href="https://geni.us/KYZaNwK" isExternal>
