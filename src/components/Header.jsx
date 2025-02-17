@@ -14,11 +14,33 @@ import {
 import { IoClose, IoMenu } from "react-icons/io5";
 import LINKS from "../constants/pageLinks";
 import logoMedium from "../assets/ELStarlingMedLogoBLUE.webp";
+import PropTypes from "prop-types";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [hasScrolled, setHasScrolled] = useState(false);
   const isMobile = useBreakpointValue({ base: true, lg: false });
+
+  const NavigationLink = ({ link, onClick }) => (
+    <Link
+      key={link}
+      href={link === "home" ? "#" : `#${link}`}
+      onClick={onClick}
+      fontWeight="bold"
+      fontSize="22px"
+      p="0.75rem"
+      _hover={{
+        textDecoration: "underline",
+      }}
+    >
+      {link.toUpperCase()}
+    </Link>
+  );
+
+  NavigationLink.propTypes = {
+    link: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,18 +90,7 @@ const Header = () => {
           hideBelow="md"
         >
           {LINKS.map((link) => (
-            <Link
-              key={link}
-              href={link === "home" ? "#" : `#${link}`}
-              fontWeight="bold"
-              fontSize="22px"
-              p="0.75rem"
-              _hover={{
-                textDecoration: "underline",
-              }}
-            >
-              {link.toUpperCase()}
-            </Link>
+            <NavigationLink key={link} link={link} />
           ))}
         </HStack>
         <IconButton
@@ -103,19 +114,7 @@ const Header = () => {
         <Box hideFrom="md" background="white" pt="3rem">
           <VStack as="nav" spacing={4}>
             {LINKS.map((link) => (
-              <Link
-                key={link}
-                href={link === "home" ? "#" : `#${link}`}
-                onClick={onClose}
-                fontWeight="bold"
-                fontSize="22px"
-                p="0.75rem"
-                _hover={{
-                  textDecoration: "underline",
-                }}
-              >
-                {link.toUpperCase()}
-              </Link>
+              <NavigationLink key={link} link={link} onClick={onClose} />
             ))}
           </VStack>
         </Box>
