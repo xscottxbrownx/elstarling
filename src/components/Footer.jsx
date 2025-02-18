@@ -44,7 +44,6 @@ export default function Footer() {
         maxW={"6xl"}
         py={4}
         direction={{ base: "column", md: "row" }}
-        spacing={{ base: 2, md: 4 }}
         justify={{ base: "center", md: "space-between" }}
         align="center"
       >
