@@ -54,6 +54,7 @@ export default function Footer() {
           <Link
             href="https://www.scottxbrown.com"
             isExternal
+            aria-label="SxB Development"
             _hover={{
               textDecoration: "underline",
             }}

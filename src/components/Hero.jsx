@@ -21,7 +21,7 @@ const Hero = () => {
         objectFit="contain"
       />
       <Link href="#about" hideBelow="md">
-        <svg className={styles.arrows}>
+        <svg className={styles.arrows} role="presentation">
           <path
             role="presentation"
             className={styles.a1}
