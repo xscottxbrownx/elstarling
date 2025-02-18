@@ -1,6 +1,7 @@
 import {
   Box,
   Flex,
+  Heading,
   HStack,
   Image,
   Link,
@@ -44,14 +45,17 @@ const Contact2 = () => {
 
   return (
     <Flex
+      as="section"
       id="contact"
-      direction={{ base: "column", lg: "row" }}
-      color="var(--secondary)"
+      w="100vw"
       py="6rem"
-      align={{ base: "center", lg: "flex-start" }}
-      justify="space-evenly"
-      gap={24}
+      direction="column"
+      align="center"
+      color="var(--secondary)"
     >
+      <Heading as="h2" color="white" w="1px" h="1px">
+        Contact
+      </Heading>
       <VStack spacing={4}>
         <Image
           src={ContactStar}

@@ -1,4 +1,11 @@
-import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import AboutStar from "../assets/AboutStar.webp";
 
 const About = () => {
@@ -44,6 +51,9 @@ const About = () => {
       py="6rem"
       bg="var(--background)"
     >
+      <Heading as="h2" color="var(--background)" w="1px" h="1px">
+        About the Author
+      </Heading>
       <Image
         src={AboutStar}
         alt="About the Author (E L Starling)"

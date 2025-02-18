@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Image,
+  Heading,
   HStack,
   Link,
   Text,
@@ -102,12 +103,10 @@ const Books = () => {
         >
           <Button border="solid var(--secondary) 1px" h="56px" w="280px">
             {/* <FaPinterest size="48px" color="#E60023" /> */}
-            <HStack>
-              <FaPinterest size="36px" color="var(--secondary)" />
-              <Text color="var(--secondary)" ml="10px" fontSize="24px">
-                Moodboard
-              </Text>
-            </HStack>
+            <FaPinterest size="36px" color="var(--secondary)" />
+            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+              Moodboard
+            </Text>
           </Button>
         </Link>
       </VStack>
@@ -126,6 +125,9 @@ const Books = () => {
       direction="column"
       bg="var(--background)"
     >
+      <Heading as="h2" color="var(--background)" w="1px" h="1px">
+        Books written by E L Starling
+      </Heading>
       <Image
         src={isMobile ? BooksStarMobile : BooksStarDesktop}
         alt="Books written by E L Starling"

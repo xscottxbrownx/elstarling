@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import {
   Box,
   Flex,
+  Heading,
   HStack,
   IconButton,
   Image,
@@ -72,6 +73,9 @@ const Header = () => {
       pb={isOpen ? "3rem" : "0"}
     >
       <Flex alignItems="center">
+        <Heading as="h1" color="transparent" w="1px" h="1px">
+          E L Starling | YA Author
+        </Heading>
         <Image
           src={logoMedium}
           alt="E L Starling logo"
