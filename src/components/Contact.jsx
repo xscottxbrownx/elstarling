@@ -69,7 +69,7 @@ const Contact2 = () => {
       align="center"
       color="var(--secondary)"
     >
-      <Heading as="h2" color="white" w="1px" h="1px">
+      <Heading as="h2" color="transparent" w="1px" h="1px">
         Contact
       </Heading>
       <VStack spacing={4}>

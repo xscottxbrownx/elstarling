@@ -51,7 +51,7 @@ const About = () => {
       py="6rem"
       bg="var(--background)"
     >
-      <Heading as="h2" color="var(--background)" w="1px" h="1px">
+      <Heading as="h2" color="transparent" w="1px" h="1px">
         About the Author
       </Heading>
       <Image
