@@ -28,14 +28,23 @@ const Books = () => {
         objectFit="cover"
       />
       <VStack w="100%">
-        <Link href="https://geni.us/KYZaNwK" isExternal>
+        <Link
+          href="https://geni.us/KYZaNwK"
+          isExternal
+          aria-labelledby="preorder"
+        >
           <Button
             border="solid var(--secondary) 1px"
             h="56px"
             w={{ base: "215px", md: "280px" }}
           >
             <GiBrain size="36px" color="var(--secondary)" />
-            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            <Text
+              id="preorder"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
               Preorder
             </Text>
           </Button>
@@ -47,13 +56,19 @@ const Books = () => {
         >
           {/* <FaSpotify size="48px" color="#1ED760" /> */}
           <FaSpotify size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
+          <Text
+            id="playlist"
+            color="var(--secondary)"
+            ml="10px"
+            fontSize="24px"
+          >
             Playlist
           </Text>
         </Button>
         <Link
           href="https://www.pinterest.com/emilylstarling/boundless/"
           isExternal
+          aria-labelledby="moodboard"
         >
           <Button
             border="solid var(--secondary) 1px"
@@ -62,7 +77,12 @@ const Books = () => {
           >
             {/* <FaPinterest size="48px" color="#E60023" /> */}
             <FaPinterest size="36px" color="var(--secondary)" />
-            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            <Text
+              id="moodboard"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
               Moodboard
             </Text>
           </Button>
@@ -82,10 +102,19 @@ const Books = () => {
         />
       </Box>
       <VStack flex="1" py="1rem" alignItems="start">
-        <Link href="https://geni.us/KYZaNwK" isExternal>
+        <Link
+          href="https://geni.us/KYZaNwK"
+          isExternal
+          aria-labelledby="preorder"
+        >
           <Button border="solid var(--secondary) 1px" h="56px" w="280px">
             <GiBrain size="36px" color="var(--secondary)" />
-            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            <Text
+              id="preorder"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
               Preorder
             </Text>
           </Button>
@@ -93,18 +122,29 @@ const Books = () => {
         <Button border="solid var(--secondary) 1px" h="56px" w="280px">
           {/* <FaSpotify size="48px" color="#1ED760" /> */}
           <FaSpotify size="36px" color="var(--secondary)" />
-          <Text color="var(--secondary)" ml="10px" fontSize="24px">
+          <Text
+            id="playlist"
+            color="var(--secondary)"
+            ml="10px"
+            fontSize="24px"
+          >
             Playlist
           </Text>
         </Button>
         <Link
           href="https://www.pinterest.com/emilylstarling/boundless/"
           isExternal
+          aria-labelledby="moodboard"
         >
           <Button border="solid var(--secondary) 1px" h="56px" w="280px">
             {/* <FaPinterest size="48px" color="#E60023" /> */}
             <FaPinterest size="36px" color="var(--secondary)" />
-            <Text color="var(--secondary)" ml="10px" fontSize="24px">
+            <Text
+              id="moodboard"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
               Moodboard
             </Text>
           </Button>
