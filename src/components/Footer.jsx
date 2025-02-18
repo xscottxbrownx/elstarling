@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import logoSquare from "../assets/ELSsmallSquareLogoBLUE.webp";
 
-export default function Footer2() {
+const Footer = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   const renderMobile = (
@@ -88,4 +88,6 @@ export default function Footer2() {
       </Container>
     </Box>
   );
-}
+};
+
+export default Footer;
