@@ -26,6 +26,7 @@ const Header = () => {
     <Link
       key={link}
       href={link === "home" ? "#" : `#${link}`}
+      aria-label={link === "home" ? "home" : null}
       onClick={onClick}
       fontWeight="bold"
       fontSize="22px"

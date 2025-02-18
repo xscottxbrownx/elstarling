@@ -20,11 +20,19 @@ const Contact2 = () => {
     <VStack>
       <HStack>
         <Text>Represented By:</Text>
-        <Link href="https://twitter.com/Briella_Noelle" isExternal>
+        <Link
+          href="https://twitter.com/Briella_Noelle"
+          isExternal
+          aria-label="Gabriella Melendez"
+        >
           Gabriella Melendez
         </Link>
       </HStack>
-      <Link href="https://greatdogliterary.com/" isExternal>
+      <Link
+        href="https://greatdogliterary.com/"
+        isExternal
+        aria-label="Great Dog Literary"
+      >
         Great Dog Literary
       </Link>
     </VStack>
@@ -33,11 +41,19 @@ const Contact2 = () => {
   const renderDesktop = (
     <HStack>
       <Text>Represented By:</Text>
-      <Link href="https://twitter.com/Briella_Noelle" isExternal>
+      <Link
+        href="https://twitter.com/Briella_Noelle"
+        isExternal
+        aria-label="Gabriella Melendez"
+      >
         Gabriella Melendez
       </Link>
       <Text> | </Text>
-      <Link href="https://greatdogliterary.com/" isExternal>
+      <Link
+        href="https://greatdogliterary.com/"
+        isExternal
+        aria-label="Great Dog Literary"
+      >
         Great Dog Literary
       </Link>
     </HStack>
@@ -77,6 +93,7 @@ const Contact2 = () => {
         <Box width={{ base: "300px", md: "450px" }} mt="2rem">
           <iframe
             src="https://elstarling.substack.com/embed"
+            title="signup for newsletter on E L Starling's subtack"
             width="100%"
             height="150"
           />
