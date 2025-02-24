@@ -13,8 +13,7 @@ import {
 import BooksStarDesktop from "../assets/BooksStar.webp";
 import BooksStarMobile from "../assets/BooksStarMobile.webp";
 import BookCover from "../assets/BoundByStars.webp";
-import { FaPinterest, FaSpotify } from "react-icons/fa";
-import { GiBrain } from "react-icons/gi";
+import { FaPinterest, FaShippingFast, FaSpotify } from "react-icons/fa";
 
 const Books = () => {
   const isMobile = useBreakpointValue({ base: true, lg: false });
@@ -30,6 +29,7 @@ const Books = () => {
       <VStack w="100%">
         <Link
           href="https://geni.us/KYZaNwK"
+          // href="https://amzn.to/4hGNK3f"
           isExternal
           aria-labelledby="preorder"
         >
@@ -38,7 +38,7 @@ const Books = () => {
             h="56px"
             w={{ base: "215px", md: "280px" }}
           >
-            <GiBrain size="36px" color="var(--secondary)" />
+            <FaShippingFast size="36px" color="var(--secondary)" />
             <Text
               id="preorder"
               color="var(--secondary)"
@@ -104,11 +104,12 @@ const Books = () => {
       <VStack flex="1" py="1rem" alignItems="start">
         <Link
           href="https://geni.us/KYZaNwK"
+          // href="https://amzn.to/4hGNK3f"
           isExternal
           aria-labelledby="preorder"
         >
           <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-            <GiBrain size="36px" color="var(--secondary)" />
+            <FaShippingFast size="36px" color="var(--secondary)" />
             <Text
               id="preorder"
               color="var(--secondary)"
