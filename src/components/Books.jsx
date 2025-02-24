@@ -49,22 +49,28 @@ const Books = () => {
             </Text>
           </Button>
         </Link>
-        <Button
-          border="solid var(--secondary) 1px"
-          h="56px"
-          w={{ base: "215px", md: "280px" }}
+        <Link
+          href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
+          isExternal
+          aria-labelledby="playlist"
         >
-          {/* <FaSpotify size="48px" color="#1ED760" /> */}
-          <FaSpotify size="36px" color="var(--secondary)" />
-          <Text
-            id="playlist"
-            color="var(--secondary)"
-            ml="10px"
-            fontSize="24px"
+          <Button
+            border="solid var(--secondary) 1px"
+            h="56px"
+            w={{ base: "215px", md: "280px" }}
           >
-            Playlist
-          </Text>
-        </Button>
+            {/* <FaSpotify size="48px" color="#1ED760" /> */}
+            <FaSpotify size="36px" color="var(--secondary)" />
+            <Text
+              id="playlist"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
+              Playlist
+            </Text>
+          </Button>
+        </Link>
         <Link
           href="https://www.pinterest.com/emilylstarling/boundless/"
           isExternal
@@ -120,18 +126,24 @@ const Books = () => {
             </Text>
           </Button>
         </Link>
-        <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-          {/* <FaSpotify size="48px" color="#1ED760" /> */}
-          <FaSpotify size="36px" color="var(--secondary)" />
-          <Text
-            id="playlist"
-            color="var(--secondary)"
-            ml="10px"
-            fontSize="24px"
-          >
-            Playlist
-          </Text>
-        </Button>
+        <Link
+          href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
+          isExternal
+          aria-labelledby="playlist"
+        >
+          <Button border="solid var(--secondary) 1px" h="56px" w="280px">
+            {/* <FaSpotify size="48px" color="#1ED760" /> */}
+            <FaSpotify size="36px" color="var(--secondary)" />
+            <Text
+              id="playlist"
+              color="var(--secondary)"
+              ml="10px"
+              fontSize="24px"
+            >
+              Playlist
+            </Text>
+          </Button>
+        </Link>
         <Link
           href="https://www.pinterest.com/emilylstarling/boundless/"
           isExternal
