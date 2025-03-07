@@ -46,7 +46,7 @@ const About = () => {
       w="100vw"
       align="center"
       justify="center"
-      mb="2.5rem"
+      my="2.5rem"
       px={{ base: "2rem", lg: "5rem", xl: "18rem" }}
       py="6rem"
       bg="var(--background)"

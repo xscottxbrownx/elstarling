@@ -29,7 +29,7 @@ const Header = () => {
       role={link === "home" ? "button" : null}
       aria-label={link === "home" ? "home" : `${link} section`}
       onClick={onClick}
-      fontWeight="bold"
+      fontWeight="semibold"
       fontSize="22px"
       p="0.75rem"
       _hover={{

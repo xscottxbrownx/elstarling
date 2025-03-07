@@ -1,3 +1,3 @@
-const LINKS = ["home", "about", "books", "contact"];
+const LINKS = ["home", "books", "about", "contact"];
 
 export default LINKS;

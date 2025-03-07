@@ -171,7 +171,7 @@ const Books = () => {
       as="section"
       id="books"
       w="100vw"
-      my="2.5rem"
+      mb="2.5rem"
       py="6rem"
       px={{ base: "2rem", lg: "5rem", xl: "18rem" }}
       align="center"
