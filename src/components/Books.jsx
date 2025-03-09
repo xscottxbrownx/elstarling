@@ -29,7 +29,6 @@ const Books = () => {
       <VStack w="100%">
         <Link
           href="https://geni.us/KYZaNwK"
-          // href="https://amzn.to/4hGNK3f"
           isExternal
           aria-labelledby="preorder"
         >
@@ -49,50 +48,38 @@ const Books = () => {
             </Text>
           </Button>
         </Link>
-        <Link
-          href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
-          isExternal
-          aria-labelledby="playlist"
+        <HStack
+          w={{ base: "215px", md: "280px" }}
+          justifyContent="space-around"
+          mt="1.5rem"
         >
-          <Button
-            border="solid var(--secondary) 1px"
-            h="56px"
-            w={{ base: "215px", md: "280px" }}
+          <Link
+            href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
+            isExternal
+            aria-labelledby="playlist"
           >
-            {/* <FaSpotify size="48px" color="#1ED760" /> */}
-            <FaSpotify size="36px" color="var(--secondary)" />
-            <Text
-              id="playlist"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Playlist
-            </Text>
-          </Button>
-        </Link>
-        <Link
-          href="https://www.pinterest.com/emilylstarling/boundless/"
-          isExternal
-          aria-labelledby="moodboard"
-        >
-          <Button
-            border="solid var(--secondary) 1px"
-            h="56px"
-            w={{ base: "215px", md: "280px" }}
+            <VStack>
+              {/* <FaSpotify size="48px" color="#1ED760" /> */}
+              <FaSpotify size="36px" color="var(--secondary)" />
+              <Text id="playlist" color="var(--secondary)" fontSize="18px">
+                Playlist
+              </Text>
+            </VStack>
+          </Link>
+          <Link
+            href="https://www.pinterest.com/emilylstarling/boundless/"
+            isExternal
+            aria-labelledby="moodboard"
           >
-            {/* <FaPinterest size="48px" color="#E60023" /> */}
-            <FaPinterest size="36px" color="var(--secondary)" />
-            <Text
-              id="moodboard"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Moodboard
-            </Text>
-          </Button>
-        </Link>
+            <VStack>
+              {/* <FaPinterest size="48px" color="#E60023" /> */}
+              <FaPinterest size="36px" color="var(--secondary)" />
+              <Text id="moodboard" color="var(--secondary)" fontSize="18px">
+                Moodboard
+              </Text>
+            </VStack>
+          </Link>
+        </HStack>
       </VStack>
     </VStack>
   );
@@ -107,15 +94,14 @@ const Books = () => {
           objectFit="cover"
         />
       </Box>
-      <VStack flex="1" py="1rem" alignItems="start">
+      <VStack flex="1" alignItems="start">
         <Link
           href="https://geni.us/KYZaNwK"
-          // href="https://amzn.to/4hGNK3f"
           isExternal
           aria-labelledby="preorder"
         >
-          <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-            <FaShippingFast size="36px" color="var(--secondary)" />
+          <Button border="solid var(--secondary) 1px" h="56px" w="200px">
+            <FaShippingFast size="32px" color="var(--secondary)" />
             <Text
               id="preorder"
               color="var(--secondary)"
@@ -126,42 +112,44 @@ const Books = () => {
             </Text>
           </Button>
         </Link>
-        <Link
-          href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
-          isExternal
-          aria-labelledby="playlist"
-        >
-          <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-            {/* <FaSpotify size="48px" color="#1ED760" /> */}
-            <FaSpotify size="36px" color="var(--secondary)" />
-            <Text
-              id="playlist"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Playlist
-            </Text>
-          </Button>
-        </Link>
-        <Link
-          href="https://www.pinterest.com/emilylstarling/boundless/"
-          isExternal
-          aria-labelledby="moodboard"
-        >
-          <Button border="solid var(--secondary) 1px" h="56px" w="280px">
-            {/* <FaPinterest size="48px" color="#E60023" /> */}
-            <FaPinterest size="36px" color="var(--secondary)" />
-            <Text
-              id="moodboard"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Moodboard
-            </Text>
-          </Button>
-        </Link>
+        <HStack w="100%" justifyContent="space-around" mt="2rem">
+          <Link
+            href="https://open.spotify.com/playlist/4QLAbSMR1ZY9FnIUccSNNo?si=Cj90pT4gTBStLR9dwb5ypA&pi=gQGUm56aTkmyW"
+            isExternal
+            aria-labelledby="playlist"
+          >
+            <VStack>
+              {/* <FaSpotify size="36px" color="#1ED760" /> */}
+              <FaSpotify size="36px" color="var(--secondary)" />
+              <Text
+                id="playlist"
+                color="var(--secondary)"
+                fontSize="18px"
+                fontWeight="bold"
+              >
+                Playlist
+              </Text>
+            </VStack>
+          </Link>
+          <Link
+            href="https://www.pinterest.com/emilylstarling/boundless/"
+            isExternal
+            aria-labelledby="moodboard"
+          >
+            <VStack>
+              {/* <FaPinterest size="36px" color="#E60023" /> */}
+              <FaPinterest size="36px" color="var(--secondary)" />
+              <Text
+                id="moodboard"
+                color="var(--secondary)"
+                fontSize="18px"
+                fontWeight="bold"
+              >
+                Moodboard
+              </Text>
+            </VStack>
+          </Link>
+        </HStack>
       </VStack>
     </HStack>
   );
