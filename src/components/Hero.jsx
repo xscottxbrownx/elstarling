@@ -20,7 +20,7 @@ const Hero = () => {
         // objectFit={{ base: "contain", lg: "contain" }}
         objectFit="contain"
       />
-      <Link href="#about" hideBelow="md">
+      <Link href="#books" hideBelow="md">
         <svg className={styles.arrows} role="presentation">
           <path
             role="presentation"
