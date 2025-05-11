@@ -8,6 +8,7 @@ import Posts from "./components/Posts";
 import Socials from "./components/Socials";
 import Books from "./components/Books";
 import ImageBreak from "./components/ImageBreak";
+import PdfViewer from "./components/PdfViewer";
 
 const App = () => (
   <>
@@ -16,9 +17,11 @@ const App = () => (
       <Hero />
       <Socials />
       <Books />
+      <PdfViewer />
       <ImageBreak />
       <About />
       <Posts />
+      <PdfViewer />
       <Contact />
     </main>
     <Footer />
