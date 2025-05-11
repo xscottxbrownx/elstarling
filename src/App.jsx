@@ -21,7 +21,6 @@ const App = () => (
       <ImageBreak />
       <About />
       <Posts />
-      <PdfViewer />
       <Contact />
     </main>
     <Footer />
