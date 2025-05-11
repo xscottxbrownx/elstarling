@@ -132,7 +132,7 @@ const Books = () => {
             </VStack>
           </Link>
           <Link
-            href="https://www.pinterest.com/emilylstarling/boundless/"
+            href="https://www.pinterest.com/emilylstarling/bound-by-stars/"
             isExternal
             aria-labelledby="moodboard"
           >
