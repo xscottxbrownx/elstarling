@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 const PdfViewer = () => {
   <Flex
@@ -14,7 +14,7 @@ const PdfViewer = () => {
     py="6rem"
     bg="var(--background)"
   >
-    <h1>PDF Viewer</h1>
+    <Heading as="h2">PDF Viewer</Heading>
     <Text color="var(--secondary)" fontSize="18px">
       This is a placeholder for the PDF viewer component.
     </Text>
