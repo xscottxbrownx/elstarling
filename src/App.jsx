@@ -11,20 +11,21 @@ import ImageBreak from "./components/ImageBreak";
 import PdfViewer from "./components/PdfViewer";
 
 const App = () => (
-  <>
-    <Header />
-    <main>
-      <Hero />
-      <Socials />
-      <Books />
-      <PdfViewer />
-      <ImageBreak />
-      <About />
-      <Posts />
-      <Contact />
-    </main>
-    <Footer />
-  </>
+  // <>
+  //   <Header />
+  //   <main>
+  //     <Hero />
+  //     <Socials />
+  //     <Books />
+  //     <PdfViewer />
+  //     <ImageBreak />
+  //     <About />
+  //     <Posts />
+  //     <Contact />
+  //   </main>
+  //   <Footer />
+  // </>
+  <PdfViewer />
 );
 
 export default App;

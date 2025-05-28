@@ -74,3 +74,9 @@ a:focus-visible {
     border-color: #a48a91;
   }
 }
+
+@media print {
+  .pdf-container {
+    display: none;
+  }
+}
