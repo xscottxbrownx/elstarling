@@ -27,24 +27,15 @@ const Books = () => {
         objectFit="cover"
       />
       <VStack w="100%">
-        <Link
-          href="https://geni.us/KYZaNwK"
-          isExternal
-          aria-labelledby="preorder"
-        >
+        <Link href="https://geni.us/KYZaNwK" isExternal aria-labelledby="order">
           <Button
             border="solid var(--secondary) 1px"
             h="56px"
             w={{ base: "215px", md: "280px" }}
           >
             <FaShippingFast size="36px" color="var(--secondary)" />
-            <Text
-              id="preorder"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Preorder
+            <Text id="order" color="var(--secondary)" ml="10px" fontSize="24px">
+              Order Now
             </Text>
           </Button>
         </Link>
@@ -95,20 +86,11 @@ const Books = () => {
         />
       </Box>
       <VStack flex="1" alignItems="start">
-        <Link
-          href="https://geni.us/KYZaNwK"
-          isExternal
-          aria-labelledby="preorder"
-        >
+        <Link href="https://geni.us/KYZaNwK" isExternal aria-labelledby="order">
           <Button border="solid var(--secondary) 1px" h="56px" w="200px">
             <FaShippingFast size="32px" color="var(--secondary)" />
-            <Text
-              id="preorder"
-              color="var(--secondary)"
-              ml="10px"
-              fontSize="24px"
-            >
-              Preorder
+            <Text id="order" color="var(--secondary)" ml="10px" fontSize="24px">
+              Order Now
             </Text>
           </Button>
         </Link>
